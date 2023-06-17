@@ -1,0 +1,21 @@
+{
+  "places": "Places",
+  "play": "Play",
+  "close": "Close",
+  "see_more": "See More",
+  "services": "Services",
+  "activities": "Activities",
+  "did_you_know": "Did you know?",
+  "game_rules": "Game Rules",
+  "rule1": "You must answer each question before the time is up",
+  "rule2": "Get 5 points for each correct answer plus 5 extra seconds of time",
+  "rule3": "For each failure you lose 3 points, if you fail more than 5 times you automatically lose",
+  "continue": "Continue",
+  "score": "Score",
+  "end_of_the_game": "End Of The Game",
+  "go_back": "Go Back",
+  "play_again": "Play Again",
+  "maximum_score": "Maximum Score",
+  "score_earned": "Score Earned",
+  "map": "Map"
+}

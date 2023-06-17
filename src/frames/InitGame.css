@@ -1,0 +1,23 @@
+.container {
+  height: 100vh;
+  position: relative;
+}
+
+
+.instructions {
+  margin-top: 16px;
+  padding: 0 16px;
+  display: grid;
+  gap: 24px;
+}
+
+.instructions p {
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}

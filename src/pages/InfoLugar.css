@@ -1,0 +1,161 @@
+:root {
+  --text-gray-color: rgb(80, 80, 80); 
+}
+
+.slides-container {
+  width: 100%;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.slides-container--closed {
+  height: 40vh;
+}
+
+@media (min-width: 640px) {
+  .slides-container--closed {
+    height: 80vh;
+  }
+}
+
+.slides-container--open {
+  height: 100vh;
+  background-color: black;
+}
+
+.slides-container .full-icon {
+  padding: 6px 8px 4px 8px;
+  position: absolute;
+  top: 16px;
+  right: 8px;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.slides-container .count-slides {
+  position: absolute;
+  right: 8px;
+  bottom: 32px;
+  padding: 4px 8px;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.slides-container .count-slides span {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.image-container {
+  height: 100%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.slides-container--open .image-container {
+  height: 100vh;
+}
+
+.image-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.info-lugar {
+  margin: 16px;
+  font-family: 'Lato'
+}
+
+.info-lugar h2 {
+  
+}
+
+.info-lugar .address {
+  margin-top: 8px;
+  padding-bottom: 16px;
+  font-size: 14px;
+  color: var(--text-gray-color);
+  border-bottom: 1px solid rgb(100, 100, 100);
+}
+
+.info-lugar .description,
+.info-lugar .services,
+.info-lugar .activities {
+  margin-top: 16px;
+  padding-bottom: 16px;
+  color: var(--text-gray-color);
+  border-bottom: 1px solid black;
+}
+
+.info-lugar .description {
+  line-height: 28px;
+}
+
+.info-lugar .phone,
+.info-lugar .email {
+  margin-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid black;
+}
+
+.info-lugar .services .list-title,
+.info-lugar .activities .list-title{
+  text-align: center;
+  color: black;
+}
+
+.info-lugar li {
+  padding: 4px 0px;
+  list-style: none;
+}
+
+.info-lugar .know {
+  margin: 16px 0;
+  position: relative;
+}
+
+.visibility {
+  opacity: 1;
+}
+
+.invisibility {
+  opacity: 0;
+}
+
+.info-lugar .know-bubble {
+  width: calc(100% - 32px);
+  position: absolute;
+  margin-left: 32px;
+  bottom: 0px;
+  transform: translateY(-30px);
+  transition: opacity 500ms ease-out;
+  padding: 16px;
+  border-radius: 50px;
+  background-color: pink;
+}
+
+.know-bubble p {
+  overflow: hidden;
+}
+
+.info-lugar .know-bubble div {
+  width: 0;
+  position: absolute;
+  bottom: -16px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 22px solid pink;
+  transform: rotate(30deg)
+}
+
+.p-center {
+  display: flex;
+  align-items: center;
+  color: var(--text-gray-color);
+}
+
+.p-center svg {
+  margin-right: 8px;
+}

@@ -1,0 +1,11 @@
+:root {
+  --soft-gray: #F0F0F0;
+  --dark-blue: #024059;
+  --dark-turquoise: #026873;
+  --card-soft-green: #A8F6A2;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

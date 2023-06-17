@@ -1,0 +1,19 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  background-color: #1976d2;
+}
+
+.header .logo-container img {
+  width: 48px;
+  height: 48  px;
+}
+
+.header .title-container h1 {
+  margin-left: 4px;
+  font-size: 24px;
+  color: white;
+  
+}

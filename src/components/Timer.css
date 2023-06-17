@@ -1,0 +1,10 @@
+.timer {
+  padding: 4px;
+  display: inline-block;
+}
+
+.timer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

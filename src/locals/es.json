@@ -1,0 +1,21 @@
+{
+  "places": "Lugares",
+  "play": "Jugar",
+  "close": "Cerrar", 
+  "see_more": "Ver Más",
+  "services": "Servicios",
+  "activities": "Actividades",
+  "did_you_know": "¿Sabías que?",
+  "game_rules": "Reglas del Juego",
+  "rule1": "Debes responder cada pregunta antes que es tiempo",
+  "rule2": "Obten 5 puntos por cada respuesta correcta mas 5 segundos extra de tiempo",
+  "rule3": "Por cada fallo pierde 3 puntos, si falla más de 5 veces pierde automáticamente",
+  "continue": "Continuar",
+  "score": "Puntos",
+  "end_of_the_game": "Fin del Juego",
+  "go_back": "Regresar",
+  "play_again": "Jugar de Nuevo",
+  "maximum_score": "Puntos Maximos",
+  "score_earned": "Puntaje Obtenido",
+  "map": "Mapa"
+}

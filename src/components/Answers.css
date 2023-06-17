@@ -1,0 +1,16 @@
+
+.answers-container {
+  margin-top: 8px;
+  display: grid;
+  gap: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+.answer-item > div {
+  padding: 16px 8px;
+  border: 1px solid #1976d2;
+  border-radius: 8px;
+}
