@@ -1,12 +1,12 @@
 const info = { es: `
 La Isla de Ometepe:
 <br/><br/>
-Ometepe,vocablo de origen náhuatl qué significa Ome: dos y tepetl:cerros,con una extensión territorial de 276 km² , es la isla más grande del mundo dentro de un lago de agua dulce. Este "sitios sagrado"cómo se le conoce a la isla, comprende de dos municipios,Moyogalpa y Altagracia. La Isla se compone por dos colosos volcanes,el  Madera y  el Concepción, unidos por un istmo  delgado y plano llamado "Istmo Istian", lo que le da a la isla la forma de un reloj de arena u ocho.Fue  declarada por la UNESCO como reserva de biosfera en 2010.
+Ometepe,vocablo de origen náhuatl qué significa Ome: dos y tepetl:cerros,con una extensión territorial de 276 km² , es la isla más grande del mundo dentro de un lago de agua dulce. Este "Sitios Sagrado"cómo se le conoce a la Isla, comprende de dos municipios ,Moyogalpa y Altagracia. La Isla se compone por dos colosos volcanes,el  Madera y  el Concepción, unidos por un istmo  delgado y plano llamado "Istmo Istian", lo que le da a la Isla la forma de un reloj de arena u ocho.Fue  declarada por la UNESCO como reserva de biosfera en 2010.
 <br/>
 
-En la época precolombina la poblaron tribus Caribisis de Sudamérica, Chorotegas,Nahuas,entre otras tribus que han dejado una gran cantidad de petroglifo e ídolos de piedra distribuidos por toda la isla que dan fe de su vivencia indígena,un ejemplo de ello son los ídolos de piedra más grande encontrado en ometepe que se pueden apreciar en la parroquia San Diego de Alcalá, ubicada en el centro de Altagracia,al igual que en el museo arqueológico,en el  cual también ofrece información cultural y geológica.
+En la época precolombina la poblaron tribus Caribisis de Sudamérica, Chorotegas,Nahuas,entre otras tribus, que han dejado una gran cantidad de petroglifo e ídolos de piedra distribuidos por toda la Isla que dan fe de su vivencia indígena,un ejemplo de ello son los ídolos de piedra más grande encontrado en Ometepe que se pueden apreciar en la parroquia San Diego de Alcalá, ubicada en el centro de Altagracia,al igual que en el Museo Arqueológico,en el  cual también ofrece información cultural y geológica.
 <br/>
-Altagracia cuyo nombre en náhuatl significa“Casa de las Garzas",fue la capital indígena de ometepe en la época precolombina y Moyogalpa que en lengua antigua náhuatl significa“Pueblo de los mosquitos o zancudos”,que  actualmente cuenta con dos de los tres puertos de la isla,en donde comienza tu aventura.
+Altagracia cuyo nombre en náhuatl significa“Casa de las Garzas",fue la capital indígena de Ometepe en la época Precolombina y Moyogalpa que en lengua antigua náhuatl significa“Pueblo de los mosquitos o zancudos”,actualmente cuenta con dos de los tres puertos de la Isla,en donde comienza tú aventura.
 <br/>
 Ometepe es fácilmente accesible en un viaje de una hora en ferry desde San Jorge,Rivas, promovida como un “Oasis de paz” ofrece atractivos como:la Reserva ecológica de Charco Verde,Playa Santo Domingo,Punta Jesús María, cascada San Ramón,Ojo de agua,entre otros atractivos que te presentaremos en esta aplicación.
 `,

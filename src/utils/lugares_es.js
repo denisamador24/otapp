@@ -18,7 +18,7 @@
 const lugaresEs = [
    {
     name: 'Playa primavera',
-    description: 'La primavera es un lugar muy hermoso, su principal atractivo es que tiene muchas palmeras de coco, sus aguas son poco profundas y puede apreciar la vista del volcán Madera,mientras disfrutas con tu familia en un ambiente en armonía con la naturaleza.',
+    description: 'La primavera es un lugar muy hermoso, su principal atractivo son las palmeras de coco que se encuentran por toda la costa,ademas de disfrutar de sus aguas profundas,puede apreciar la hermosa vista del volcán Madera,mientras disfrutas con tu familia en un ambiente en armonía con la naturaleza.',
     address: 'De la entrada del Ojo de Agua 275 mts hacia el este.',
     phone: '',
     email: '',
@@ -32,7 +32,7 @@ const lugaresEs = [
   {
     name: 'El tesoro del pirata',
     description: 'Es un hotel alejado del ruido de la población  para  contactarse solo con la naturaleza, respiras paz y tranquilidad , tiene una linda vista al lago cosibolca,y con muy buena atención ',
-    address: 'En valle verde ometepe, en el km 15 a altagracia.',
+    address: 'En Valle Verde Ometepe, en el km 15 a Altagracia.',
     phone: '89475846',
     email: '',
     images: [
@@ -51,7 +51,7 @@ const lugaresEs = [
   },
   {
     name: 'Cascada San Ramón',
-    description: 'Cascada San Ramón se encuentra en las faldas del volcán maderas en la isla de Ometepe, a 4km del pueblo San Ramón . Es un lugar donde se encuentran vistas increíbles , paisajes de gran belleza, y su principal atractivo una cascada de aguas cristalinas que caen desde 56mts de altura.',
+    description: 'Cascada San Ramón se encuentra en las faldas del volcán Maderas en la Isla de Ometepe, a 4km del pueblo San Ramón . Es un lugar increíble donde se encuentran paisajes de gran belleza,vida silvestre, y su principal atractivo una Cascada de aguas cristalinas que caen desde 56mts de altura.',
     address: 'comunidad San Ramón, Altagracia, Rivas, Nicaragua.',
     phone: '',
     email: '',
@@ -65,8 +65,8 @@ const lugaresEs = [
   },
   {
     name: 'Hotel la estancia',
-    description: 'Es un hotel con aspecto de reserva natural,con una piscina clásica,impresiona con su gran jardín de variada vegetación ,lo que permite disfrutar en paz y tranquilidad con familia.',
-    address: 'Del hospital de moyogalpa 800 metros al sur (moyogalpa rivas Nicaragua).',
+    description: 'Es un Hotel con aspecto de Reserva Natural,con una piscina clásica,impresiona con su gran jardín de variada vegetación ,lo que permite disfrutar en paz y tranquilidad con familia.',
+    address: 'Del Hospital de Moyogalpa 800 metros al sur (Moyogalpa,Rivas,Nicaragua).',
     phone: '84118589',
     email: '',
     images: [
@@ -85,8 +85,8 @@ const lugaresEs = [
   },
   {
     name: 'Hacienda Merida',
-    description: 'El hotel Hacienda Merida  es un verdadero paraíso tropical,  ya que tiene bellas vistas a los volcanes Maderas y Concepción , puedes apreciar  espectaculares atardeceres  y disfrutar de un ambiente en armonía con la naturaleza.',
-    address: 'Merida, Altagracia,Isla de ometepe',
+    description: 'El Hotel Hacienda Merida  es un verdadero paraíso tropical,  ya que tiene bellas vistas a los volcanes Maderas y Concepción , puedes apreciar  espectaculares atardeceres  y disfrutar de un ambiente en armonía con la naturaleza.',
+    address: 'Merida, Altagracia,Isla de Ometepe',
     phone: '87017082',
     email: 'info@hmerida.com',
     images: [
@@ -104,9 +104,9 @@ const lugaresEs = [
     know: 'Está fue  una de las fincas más importantes de la familia Somoza.'
   },
   {
-    name: 'Charco verde',
-    description: 'El charco verde es una reserva ecologica ,tiene un bosque tropical seco  el cual es hogar de muchos animales silvestres,la playa charco verde es una de las playas de ometepe en la que puedes nadar y relajarte,en un largo recorrido por el bosque  llegaras a la laguna, hogar de una gran leyenda de Ometepe <br/> 60C$ - 100C$',
-    address: 'Hotel charco verde,altagracia ,isla de ometepe rivas ',
+    name: 'Charco Verde',
+    description: 'El Charco Verde es una reserva ecológica , con tiene un bosque tropical seco  el cual es hogar de muchos animales silvestres,en la playa frente Charco Verde podrás nadar y relajarte,en un largo recorrido por el bosque  llegaras a la laguna, hogar de una gran leyenda de Ometepe <br/> 60C$ - 100C$',
+    address: 'Hotel Charco Verde,Altagracia , Isla de Ometepe ,Rivas ',
     phone: '88694037',
     email: '',
     images: [
@@ -127,10 +127,10 @@ const lugaresEs = [
       'Canopy',
       'Cabalgatas'
     ],
-    know: 'En la laguna  charco verde,chico largo convertía a sus visitantes en reses con brujería y luego las vendía a los mataderos.(Leyenda chico largo,http://www.viajeroinsatisfecho.com/2016/10/leyenda-de-chico-largo.html?m=1)'
+    know: 'En la Laguna  Charco Verde,chico largo convertía a sus visitantes en reses con brujería y luego las vendía a los mataderos.(Leyenda chico largo,http://www.viajeroinsatisfecho.com/2016/10/leyenda-de-chico-largo.html?m=1)'
   },
   {
-    name: 'El hotel Punta Resort',
+    name: 'El Hotel Punta Resort',
     description: 'Es un lugar muy bonito y acogedor para tu estadía,  puedes pasar el día en la piscina al aire libre y relajarte,  además podemos disfrutar de la vista a la punta Jesús María  y admirar la puesta del sol.',
     address: 'Punta Jesús María, Moyogalpa, Isla de Ometepe .',
     phone: '85113130',
@@ -154,7 +154,7 @@ const lugaresEs = [
   {
     name: 'Playa Santa cruz',
     description: 'está playa de agua dulce, es una experiencia recreativa, se puede contemplar los dos volcanes, hay pequeños hoteles, restaurante, muchos lugares y actividades,para disfrutar de esta maravillosa playa.',
-    address: 'Del empalme del quino, 4km carretera hacía Santa cruz, Altagracia, Ometepe.',
+    address: 'Del empalme del Quino, 4km carretera hacía Santa cruz, Altagracia, Ometepe.',
     phone: '',
     email: '',
     images: [
@@ -174,7 +174,7 @@ const lugaresEs = [
   },
  {
     name: 'Mirador ecológico',
-    description: 'Es un hermoso lugar que está en contacto con la naturaleza con un hermoso paisaje a un gran lago y una pequeña Isleta , donde puedes estar en paz y armonía, apreciar la puesta de sol mientras disfrutas de los servicios del lugar.',
+    description: 'Es un hermoso lugar que está en contacto con la naturaleza,con un hermoso paisaje al gran lago y una pequeña Isleta , donde puedes estar en paz y armonía, apreciar la puesta de sol mientras disfrutas de los servicios del lugar.',
     address: 'Del quino km1/2 hacía Altagracia frente los gemelos.',
     phone: '57642833',
     email: '',
@@ -212,8 +212,8 @@ const lugaresEs = [
   },
   {
     name: 'Caballito de mar',
-    description: 'es un lugar tranquilo en ometepe se encuentra hostal, con un par de habitaciones, cabañas, bar y restaurante.Increible lugar con excelente ubicación, hermosos atardeceres, ideal para el descanso.',
-    address: 'Isla de ometepe, mérida de la iglesia, 100 metros hacia el norte, 300 metros al lago Altagracia, Nicaragua',
+    description: 'Es un lugar tranquilo en Ometepe,con un hostal, cabañas, bar y restaurante.Increible lugar con excelente ubicación, hermosos atardeceres, ideal para el descanso.',
+    address: 'Isla de ometepe, Mérida de la iglesia, 100 metros hacía el norte, 300 metros al lago Altagracia, Nicaragua',
     phone: '84512093',
     email: 'ferliri@hotmail.com',
     images: [
@@ -233,7 +233,7 @@ const lugaresEs = [
   },
   {
     name: 'Playa san fernando',
-    description: 'Es una atracción turística en ometepe donde puedes relajarte,nadar y practicar deportes acuáticos, es de arenas solida, al igual que las playas vecinas debido al movimiento volcánico en la isla durante miles de año,esto lo hace una una playa perfecta para caminar,hacer deporte, cabalgatas y cualquier actividad que desees realizar',
+    description: 'Es una atracción turística en ometepe donde puedes relajarte,nadar y practicar deportes acuáticos, es de arenas solida, al igual que las playas vecinas debido al movimiento volcánico en la isla durante miles de año,esto lo hace una una playa perfecta para caminar,jugar, cabalgar y cualquier actividad que desees realizar',
     address: 'Esta situada a orillas de la  carretera hacia Balgue-Merida',
     phone: '',
     email: '',
@@ -245,7 +245,7 @@ const lugaresEs = [
   },
   {
     name: 'Museo el Ceibo:',
-    description: 'Es un lugar muy atractivo donde puedes encontrar parte de la historia de nicaragua,cuenta con 5 salas muy bien acondicionadas acerca de la historia politica de nuestro país y en su museo precolombino se exponen más de 1500 piezas de cerámica,oro,pedernal oxidiana y jade.',
+    description: 'Es un lugar muy atractivo donde puedes encontrar parte de la historia de Nicaragua,cuenta con 5 salas muy bien acondicionadas acerca de la evolución de la moneda y política de nuestro país y en su museo precolombino se exponen más de 1500 piezas de cerámica,oro,pedernal oxidiana y jade.',
     address: 'Comunidad del Sacramento, a 10km de Moyogalpa.',
     phone: '88825528',
     email: 'hotelfincaelceibo@gmail.com',
@@ -255,12 +255,12 @@ const lugaresEs = [
     ],
     services: [],
     activities: [],
-    know: 'El territorio del ceibo contaba con 500 manzanas de territorio de las cuales 200 fueron decomisadas por el estado.<br> La mayoría de las piezas  antiguas fueron encontradas en territorios del ceibo.'
+    know: 'El Ceibo,contaba con 500 manzanas de territorio de las cuales 200 fueron decomisadas por el estado.<br> La mayoría de las piezas  antiguas fueron encontradas en territorios del ceibo.'
   },
   {
-    name: 'Playa perú',
-    description: 'El perú es un hermoso y tranquilo balneario formado en el Gran Lago de Nicaragua, con aguas dulces y tranquilas constaCon grandes espacios para realizar cualquier tipo de actividades en familia o con amigos , tiene una buena vista hacia el volcán concepción. ',
-    address: `Playa perú merida,cerro madera `,
+    name: 'Playa Perú',
+    description: 'El Perú es un hermoso y tranquilo balneario frente al gran Lago de Nicaragua, Cosibolca, de agua dulces y tranquilas.Con grandes espacios para realizar cualquier tipo de actividades en familia o con amigos , además de una buena vista hacia el Volcán. ',
+    address: `Playa Perú Mérida, Volcán Madera `,
     phone: '89321805',
     email: '',
     images: [
@@ -279,7 +279,7 @@ const lugaresEs = [
   },
   {
     name: 'Playa Mango',
-    description: 'es un bar y restaurante, de ambiente tranquilo,con vista al volcan Concepción , se puede admirar la puesta del sol  y descansar bajo sus Caracteristico árboles de mango. <br/> 170C$ - 540C$',
+    description: 'es un bar y restaurante, de ambiente tranquilo,con vista al Volcán Concepción , se puede admirar la puesta del sol  y descansar bajo sus caracteristico árboles de mango. <br/> 170C$ - 540C$',
     address: 'Playa Mangos esta ubicado a 3Km del cruce de Santa Cruz , Comunidad Limonal  - Mérida.',
     phone: '',
     email: '',
@@ -298,8 +298,8 @@ const lugaresEs = [
   },
   {
     name: 'El Río Istian',
-    description: 'es un terreno pantanoso en el lado occidental del itsmo entre Maderas y Concepción es un lugar exelente para admirar toda clase de vida silvestre donde puedes disfrutar un recorrido en Kayac y apreciar la fauna del lugar,cómo: aves ,tortugas , Mariposas , etc.',
-    address: 'carretera  Santo Domingo-Balgüe , Altagracia , Nicaragua.',
+    description: 'Es un terreno pantanoso en el lado occidental del itsmo entre Maderas y Concepción es un lugar exelente para admirar toda tipo de belleza natural,puedes disfrutar un recorrido en Kayac y apreciar la fauna del lugar.',
+    address: 'Carretera  Santo Domingo-Balgüe , Altagracia , Nicaragua.',
     phone: '85150818',
     email: 'casaistiam@hotmail.com',
     images: [
@@ -311,7 +311,7 @@ const lugaresEs = [
   },
   {
     name: 'Hospedaje los chocoyos',
-    description: 'Chocoyos es un bar y restaurante a orillas de la playa de Mérida con vista al volcán,cuenta con excelente atención hacia sus visitantes, ambientado para el descanso y el disfrute del lugar. <br/> 140C$ - 240C$',
+    description: 'Chocoyos es un bar y restaurante a orillas de la playa de Mérida con vista al volcán,cuenta con excelente atención hacia sus visitantes, ambientado para el descanso y el disfrute de sus visitantes. <br/> 140C$ - 240C$',
     address: 'A 300 metros de la iglesia católica Mérida, Ometepe, Rivas, Nicaragua.',
     phone: '78852881',
     email: '',
@@ -335,7 +335,7 @@ const lugaresEs = [
   {
     name: 'La Omaja',
     description: 'Es un hotel de ambiente fresco y tranquilo,que cuenta con piscina con  vista al exterior y terraza abierta durante todo el año con una linda vista  hacia el hotel  y la belleza del lugar.',
-    address: 'Ubicado de la hacienda Mérida 500 m al sur Mérida',
+    address: 'Ubicado de la Hacienda Mérida 500 m al sur Mérida',
     phone: '88851124',
     email: 'laomaja@hotmail.com',
     images: [
@@ -355,8 +355,8 @@ const lugaresEs = [
   },
   {
     name: 'Taguizapa',
-    description: 'taguizapa una de las playas más conocida del   casco urbano de altagracia,esta cuenta con un ambiente natural y fresco en la que puedes descansar  tranquilamente.Esta playa cuenta con hospedaje en la que puedes hacer tus reservaciones privadas y asi pasar un fin de semana hermoso con tu familia y amigos.',
-    address: 'Del parque de Altagracia, 1 km al este ,isla de ometepe,rivas,nicaragua.',
+    description: 'Taguizapa una de las playas más conocida del   casco urbano de altagracia,esta cuenta con un ambiente natural y fresco en la que puedes descansar  tranquilamente.Esta playa es indicada para  pasar un fin de semana hermoso con tu familia y amigos.',
+    address: 'Del parque de Altagracia, 1.1 km al este ,isla de ometepe,rivas,nicaragua.',
     phone: '86066237',
     email: 'taguizapabeach@hotmail.com',
     images: [
@@ -365,11 +365,11 @@ const lugaresEs = [
     ],
     services: [],
     activities: [],
-    know: 'Esta playa contiene el arbol mas antaño de ometepe,llamado ceibo (tiene aproximadamente 800 años de existencia'
+    know: 'Esta playa contiene el árbol mas antaño de ometepe,llamado ceibo (tiene aproximadamente 800 años de existencia'
   },
   {
     name: ' Playa Santo Domingo',
-    description: 'Santo Domingo tiene una longitud de aproximadamente 4km lo que la convierte en una playa bastante completa para realizar distintas actividades , desde un simple paseo hasta realizar deportes acuáticos. En Santo Domingo es fácil acceder a servicios de restaurantes , hoteles, alojamiento, paseos a caballo , tours y más .',
+    description: 'Santo Domingo tiene una longitud de aproximadamente 4km,lo que la convierte en una playa bastante completa para realizar distintas actividades , desde un simple paseo hasta realizar deportes acuáticos. En Santo Domingo es fácil acceder a servicios de restaurantes , hoteles, alojamiento, paseos a caballo , tours y más .',
     address: 'Santo Domingo, Altagracia, Rivas, Nicaragua ',
     phone: '',
     email: '',
@@ -383,7 +383,7 @@ const lugaresEs = [
   {
     name: 'Punta de Jesús María',
     description: 'La punta de Jesús María es un estrecho de tierra angosto que se extiende dentro del lago cosibólica,de aguas calmas y poco profundas. Desde ahí tendrás una vista panorámica de los volcanes Madera y Concepción y podrás disfrutar de los hermosos atardeceres desde todos los puntos de la playa, acondicionados para el disfrute de las familias',
-    address: 'A 3km del municipio de moyogalpa, carretera a Altagracia.',
+    address: 'A 3km del municipio de Moyogalpa, carretera a Altagracia.',
     phone: '86964692',
     email: '',
     images: [
@@ -397,7 +397,7 @@ const lugaresEs = [
   },
   {
     name: 'El Pital',
-    description: 'Es un lugar que te invita a conectarte con la naturaleza y dejar atrás todas tus preocupaciones . Este es un sitio en el cual puedes disfrutar junto a tus seres queridos . Es una oportunidad para tener momentos pacíficos , en el que puedes admirar una hermosa vista que te va a encantar , no te arrepentirás de este hermoso paraíso , este lugar te ofrece hermosos dormitorios que se adaptan perfectamente con la jungla y crean un ambiente auténtico , puedes disfrutar de desayunos veganos con frutas y verduras que son cultivadas ahí mismo .',
+    description: 'Es un lugar que te invita a conectarte con la naturaleza y dejar atrás todas tus preocupaciones, en el que puedes admirar una hermosa vista que te va a encantar , no te arrepentirás de este hermoso paraíso , este lugar te ofrece hermosos dormitorios que se adaptan perfectamente con la jungla y crean un ambiente auténtico , puedes disfrutar de desayunos veganos con frutas y verduras que son cultivadas ahí mismo .',
     address: 'Balgue , Altagracia, Rivas, Nicaragua .',
     phone: '85035481',
     email: 'elpital@mail.com',
@@ -445,11 +445,11 @@ const lugaresEs = [
       'Ciclismo',
      'Apicultura',
     ],
-    know: 'Las aguas cristalinas del ojo de agua provienen de vertientes que se conectan con el volcán concepción por medio de una cadena subterránea que genera 700 galones por minutos,y contienen minerales que benefician nuestra piel'
+    know: 'Las aguas cristalinas del Ojo de agua provienen de vertientes que se conectan con el volcán concepción por medio de una cadena subterránea que genera 700 galones por minutos,y contienen minerales que benefician nuestra piel'
   },
   {
     name: 'Finca mangdalena',
-    description: `Es un lugar fresco; con un ambiente de campo con un ascenso importante al volcán madera es una excelente opción para tu estadía y puedes apreciar la actividad productiva campesina.
+    description: `Es un lugar fresco; con un ambiente de campo y ascenso importante al volcán madera es una excelente opción para tu estadía y puedes apreciar la actividad productiva campesina.
     <br>
     <br>
     Sus precios por actividades: <br>
@@ -479,7 +479,7 @@ const lugaresEs = [
   },
   {
     name: 'Playa paso Real',
-    description: 'Es un lugar muy hermoso caracterizado por sus amplias costas y gran vegetación en ella se puede observar una hermosa vista inmensa.',
+    description: 'Es un lugar muy hermoso caracterizado por sus amplias costas y gran vegetación, y una vista inmensa.',
     address: 'aproximadamente  a  1km del casco urbano de Altagracia',
     phone: '',
     email: '',
@@ -493,7 +493,7 @@ const lugaresEs = [
   },
   {
     name: 'Playa san Miguel',
-    description: 'San Miguel es una de las playas que tiene el municipio de altagracia ,esta tiene un ambiente extraordinario en la que puedes ir a bañar con tu familia y amigos.Ademas contiene un pequeño cascajo dentro de ella y a unos kilometros esta una piedra llamada " piedra grande "',
+    description: 'San Miguel es una de las playas que tiene el municipio de Altagracia ,esta tiene un ambiente extraordinario en la que puedes ir a bañar con tu familia y amigos.Ademas contiene un pequeño cascajo dentro de ella y a unos kilometros esta una piedra llamada " piedra grande "',
     address: 'Comarca san miguel,costado sur empresa portuaria.',
     phone: '',
     email: '',
@@ -506,8 +506,8 @@ const lugaresEs = [
     know: 'Esta playa tiene un puerto llamado " puerto de gracia" en el que las  personas puede  viajan hacia  San Carlos y Granada.'
   },
   {
-    name: 'Laguna volcán madera',
-    description: 'A como su nombre lo dice esta es una laguna ubicada en el volcán madera,para llegar a ella tendrás que escalar y disfrutar de la fauna,flora y clima del volcán,en su cúspide encontrarás la hermosa laguna caterica de aguas frías,con mucha vegetación debido a la humedad del terreno.' ,
+    name: 'Laguna Volcán Madera',
+    description: 'A como su nombre lo dice esta es una laguna ubicada en el volcán madera,para llegar a ella tendrás que escalar y disfrutar de la fauna,flora y clima del volcán,en su cúspide encontrarás la hermosa laguna cratérica de aguas frías,con mucha vegetación debido a la humedad del terreno.' ,
     address: `para llegar a la hermosa de laguna tendrás que ir acompañado por un guía turístico.
       <br>
       <br>
@@ -529,7 +529,7 @@ const lugaresEs = [
   },
   {
     name: 'Hotel Finca Venecia',
-    description: 'Es un hotel ubicado en la isla de Ometepe,con aspecto de reserva natural, se encuentra cerca de la playa,cuánta con una gran vista hacia el volcán madera,con un fresco y tranquilo ambiente. <br/> 70C$ - 600C$',
+    description: 'Es un Hotel ubicado en la Isla de Ometepe,con aspecto de reserva natural, se encuentra cerca de la playa,cuenta con una gran vista hacia el volcán Madera,con un ambiente fresco y tranquilo . <br/> 70C$ - 600C$',
     address: 'Se encuentra localizada a 4 km de los ramos.',
     phone: '88439595',
     email: 'hotelfincavenecia@yahoo.com',
@@ -553,7 +553,7 @@ const lugaresEs = [
   },
   {
     name: 'Playa Bamboo',
-    description: 'Se caracteriza por las cabañas de bambú con diseño rústico que se encuentran cerca de la costa, es una playa con amplias costas y vegetación, perfecto para el descanso.',
+    description: 'Se caracteriza por las cabañas de bambú con diseño rústico que se encuentran cerca de la costa, es una playa amplias  y con mucha vegetación, perfecta para el descanso.',
     address: 'Balgue, Altagracia, Nicaragua',
     email: 'elbamboo.ometepe@gmail.com',
     phone: '87167640',
@@ -567,8 +567,8 @@ const lugaresEs = [
     activities: []
   },
   {
-    name: 'Cabañas del paraíso Ometepe',
-    description: 'Es un hotel de plata ubicado en San Lázaro, cuenta con piscina al aire libre, un hermoso jardín y un salón compartido todos los alojamientos tienen una vista a la playa y un acceso a un bar y restaurante, es un lugar confortable y de Gran belleza visual para el visitante',
+    name: 'Cabañas del Paraíso Ometepe',
+    description: 'Es un hotel de playa ubicado en San Lázaro, cuenta con piscina al aire libre, un hermoso jardín y un salón compartido todos los alojamientos tienen una vista a la playa y acceso a un bar y restaurante, es un lugar confortable y de Gran belleza visual para el visitante',
     address: 'De la escuela San Lázaro 700 metros al lago',
     phone: '82322497',
     email: 'cabañasparaiso23@yahoo.com',
@@ -586,7 +586,7 @@ const lugaresEs = [
   {
      name: 'Mirador los volcanes',
      description: 'Este mirador se encuentra ubicado en la parte alta de una colina a orillas de la carretera hacia Santo Domingo lo que permite una gran vista al lago, naturaleza y cultivo de sus alrededores. <br/> 180C$ - 500C$',
-     address: '24 km carretera alta gracia playa Santo Domingo, Ometepe.',
+     address: '24 km carretera Altagracia-Playa Santo Domingo, Ometepe.',
      phone: '87213383 - 87265150',
      email: '',
      images: [

@@ -35,7 +35,7 @@ const questionsEs = { a: [
     image: 'q_santaana'
   },
   {
-    question: 'Cual es el río más grande de la isla de ometepe?',
+    question: '¿Cuál es el río más grande de la Isla de Ometepe?',
     answers: {
       a: 'Río Istian',
       b: 'Río Buen Suceso',
@@ -45,7 +45,7 @@ const questionsEs = { a: [
     image: 'q_istian'
   },
   {
-    question: '¿Cual fue el primer colegio secundaria fundado en Ometepe ?',
+    question: '¿Cuál fue el primer colegio secundaria fundado en Ometepe ?',
     answers: {
       a: 'Inst. Nacional Jaime Marzá',
       b: 'Inst Nacional Ladislao Chwalbinsky',
@@ -65,7 +65,7 @@ const questionsEs = { a: [
     image: 'chavalos'
   },
    {
-     question: 'Cual es la religión que más predomina en la isla de ometepe?',
+     question: '¿Cuál es la religión que más predomina en la Isla de Ometepe?',
      answers: {
        a: 'Religión evangénlica',
        b: 'Religión Católica',
@@ -96,7 +96,7 @@ const questionsEs = { a: [
   },
   
   {
-    question: '¿Qué sitio turístico está relacionado con la leyenda de chico largo?',
+    question: '¿Qué sitio turístico está relacionado con la leyenda de Chico Largo?',
     answers: {
       a: 'El tesoro del pirata',
       b: 'Charco Verde',
@@ -126,7 +126,7 @@ const questionsEs = { a: [
     image: 'ometepe'
   },
   {
-    question: '¿Cuales de la playas Ometepina tiene la historia del Caballo de Oro?',
+    question: '¿Cuáles de la playas Ometepina tiene la historia del Caballo de Oro?',
     answers: {
       a: 'Playa Taguizapa',
       b: 'Paso Real',
@@ -136,7 +136,7 @@ const questionsEs = { a: [
     image: 'caballo'
   },
   {
-    question: '¿Cual es el nombre  nahuatl del volcan maderas?',
+    question: '¿Cuál es el nombre  náhuatl del Volcán Maderas?',
     answers: {
       a: 'coatlan(significa lugar donde vive el sol)',
       b: 'tametzona(significa luz de luna)',
@@ -166,7 +166,7 @@ const questionsEs = { a: [
     image: 'q-cascada'
   },
   {
-    question: 'Que sitio turístico de la isla de ometepe fabrica chocolate orgánico?',
+    question: '¿Qué sitio turístico de la Isla de Ometepe fabrica chocolate orgánico?',
     answers: {
       a: 'Finca Venecia ',
       b: 'El pital ',
@@ -176,7 +176,7 @@ const questionsEs = { a: [
     image: 'q-pital'
   },
   {
-    question: 'Cuáles son los nombres con los que se denomina a la isla de Ometepe?',
+    question: '¿Cuáles son los nombres con los que se denomina a la Isla de Ometepe?',
     answers: {
       a: 'Reserva de biosfera',
       b: 'Isla de Lagos y volcanes',
@@ -187,7 +187,7 @@ const questionsEs = { a: [
     image: 'ometepe'
   },
   {
-    question: '¿Que significa Ometepe en náhuatl?',
+    question: '¿Qué significa Ometepe en náhuatl?',
     answers: {
       a: 'Dos volcanes',
       b: 'Oasis de paz',
@@ -197,7 +197,7 @@ const questionsEs = { a: [
     image: 'ometepe'
   },
   {
-    question: '¿En qué lago está ubicada la isla de Ometepe?',
+    question: '¿En qué lago está ubicada la Isla de Ometepe?',
     answers: {
       a: 'Cocibolca',
       b: 'Xolotlán',
@@ -207,7 +207,7 @@ const questionsEs = { a: [
     image: 'lago'
   },
   {
-    question: '¿Cuántos volcanes posee la isla de ometepe? ',
+    question: '¿Cuántos Volcanes posee la Isla de Ometepe? ',
     answers: {
       a: 'Dos:Madera y Concepción',
       b: 'Uno: Momotombo',
