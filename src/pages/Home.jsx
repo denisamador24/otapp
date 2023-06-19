@@ -4,7 +4,14 @@ import Button from '@mui/material/Button';
 import Header from '../components/Header.jsx';
 import SlidingPanel from '../components/SlidingPanel.jsx';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
-import ChangeLanguage from '../components/ChangeLanguage.jsx';
+import ChangeLanguageTwo from '../components/ChangeLanguageTwo.jsx';
+import MapIcon from '@mui/icons-material/Map';
+import DirectionsBoatIcon from '@mui/icons-material/DirectionsBoat';
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
+import PlaceIcon from '@mui/icons-material/Place';
+
+
+
 import Stack from '@mui/material/Stack';
 
 import { useTranslation } from 'react-i18next';
@@ -30,7 +37,7 @@ const Home =  () => {
   return (
     <div className="home-page">
       <Header/>
-        <ChangeLanguage/>
+        <ChangeLanguageTwo/>
         <div className='read-botton'>
           <Button
             variant='outlined'
@@ -44,6 +51,7 @@ const Home =  () => {
                 size='large'
                 sx={{ width: '250px'}} 
                 variant='contained'
+                startIcon={<PlaceIcon/>}
               >
                 {t('places')}
               </Button>
@@ -54,6 +62,7 @@ const Home =  () => {
                 size='large' 
                 sx={{ width: '250px'}} 
                 variant='contained' 
+                startIcon={<SportsEsportsIcon/>}
               >
               {t('play')}
               </Button>
@@ -63,11 +72,19 @@ const Home =  () => {
                 size='large' 
                 sx={{ width: '250px'}} 
                 variant='contained' 
+                startIcon={<MapIcon/>}
               >
               {t('map')}
               </Button>
           </Link>
-        
+          <Link to='/barcos'>
+            <Button
+              size='large'
+              sx={{width: '250px'}}
+              variant='contained'
+              startIcon={<DirectionsBoatIcon/>}
+            >{t('ship')}</Button>
+          </Link>
         </div>
         <SlidingPanel
           isOpen={openedPanel}

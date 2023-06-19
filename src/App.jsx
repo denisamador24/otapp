@@ -6,6 +6,7 @@ import Lugares from './pages/Lugares.jsx';
 import InfoLugar from './pages/InfoLugar.jsx';
 import Game from './pages/Game.jsx';
 import Map from './pages/Map.jsx';
+import Ships from './pages/Ships.jsx';
 import './i18n';
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
           <Route path="/juego" element={<Game/>} />
           <Route path='/mapa' element={<Map/>}></Route>
           <Route path='/lugares/info/:index' element={ <InfoLugar/> } />
-          
+          <Route path='/barcos' element={ <Ships/> } />
         </Routes>
       </Router>
     </>
