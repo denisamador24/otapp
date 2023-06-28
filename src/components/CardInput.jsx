@@ -4,8 +4,8 @@ const CardInput = ({ children }) => {
   return (
     <div
       style={{
-        "marginTop": "18px",
-        "padding": "16px",
+        "margin": "32px 8px",
+        "padding": "8px",
         "borderRadius": "8px",
         "border": "2px solid skyblue",
       }}

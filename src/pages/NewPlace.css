@@ -1,7 +1,8 @@
 .newplace-container input,
 .newplace-container textarea {
   width: 100%;
-  margin: 8px 0;
+  padding: 4px;
+  margin: 4px 0;
 }
 
 .selected-images {
@@ -27,4 +28,8 @@
 .selected-images img {
   max-height: 100%;
   max-width: 100%;
+}
+
+.to-remove-image {
+  opacity: 0.6;
 }

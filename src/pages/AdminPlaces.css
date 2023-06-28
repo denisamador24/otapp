@@ -1,6 +1,14 @@
 .registedPlaces ul {
+  margin-top: 32px;
+  padding-bottom: 128px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 16px;
+}
+
+.add-place-button {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
 }

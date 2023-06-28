@@ -3,8 +3,9 @@ import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete'
 import EditNoteIcon from '@mui/icons-material/EditNote';
 import { Link, useNavigate } from 'react-router-dom';
+import { deletePlace } from '../firebase/firebase.js';
 
-const AdminPlaceItem = ({ place }) => {
+const AdminPlaceItem = ({ place, setPlaces }) => {
   const navigate = useNavigate();
   const handleEditPlace = async () => {
     localStorage.setItem('editPlace', JSON.stringify(place));
@@ -15,7 +16,16 @@ const AdminPlaceItem = ({ place }) => {
     const isSi = prompt("Si estas seguro de borrar el lugar escribe SI");
 
     if (isSi.trim().toLowerCase() === 'si') {
-      alert("se Borro!. de mentira");
+      const isDelited = await deletePlace(place.id);
+      
+      if (isDelited) {
+        setPlaces (n => {
+          const newPlaces = n.filter (it => it.id != place.id);
+          return newPlaces
+        });
+      } else {
+        alert('no se pudo borrar');
+      }
     }
   }
   return (

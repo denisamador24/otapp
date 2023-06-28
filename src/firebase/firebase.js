@@ -68,6 +68,15 @@ export async function insertNewPlace(place) {
   }
 }
 
+export async function updatePlace (place, id) {
+  try {
+    const placeRef = collection(db, "places");
+    await setDoc(doc(placeRef, id), place);
+  } catch (e) {
+    console.log(e);
+  }
+}
+
 export async function uploadImage (file, namePlace, index) {
 
    const imageName = namePlace.replace(" ", "-").toLowerCase() + index + '-' + file.lastModified + ".jpeg";
@@ -91,8 +100,8 @@ export async function getImageUrl(path) {
 }
 
 export async function deleteImage (path) {
-  const storageRef = (storage, path);
-  
+  const storageRef = ref(storage, path);
+  console.log(storageRef);
   try {
     await deleteObject(storageRef);
     return true;
@@ -117,7 +126,15 @@ export async function getPlaces () {
       }
 }
 
-
+export async function deletePlace(id) {
+  try {
+    await deleteDoc(doc(db, "places", id));
+    return true;
+  } catch (e) {
+    console.log(e);
+    return false;
+  }
+}
 
 
 /*
