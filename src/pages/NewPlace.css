@@ -1,0 +1,30 @@
+.newplace-container input,
+.newplace-container textarea {
+  width: 100%;
+  margin: 8px 0;
+}
+
+.selected-images {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 8px;
+ justify-content: center;
+ align-items: center;
+}
+
+.big-input {
+  height: 60px;
+}
+.big-textarea {
+  height: 120px;
+}
+
+.selected-images .cover-image {
+  width: 150px;
+  
+}
+
+.selected-images img {
+  max-height: 100%;
+  max-width: 100%;
+}
