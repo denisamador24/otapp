@@ -16,7 +16,7 @@ const AnswerFeedback = ({isHiden, isGoodAnswer, onContinue, goodAnswer}) => {
   
   let feedbackcontainer;
 
-  if (isGoodAnswer) {
+  if (isGoodAnswer) { 
     feedbackcontainer =
       <section 
         className={'answer-feedback answer-feedback--good-answer ' + (isHiden && 'answer-feedback--hiden')}>
