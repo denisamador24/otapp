@@ -1,17 +1,32 @@
+// styles component
 import './Playing.css';
+
+// sounds
+import wrongAnswerSound from '/src/audio/wrong-answer.mp3';
+import rightAnswerSound from '/src/audio/right-answer.mp3';
+
+// translation
 import { useTranslation } from 'react-i18next';
+
+// utils
 import  resolveImg  from '../utils/imageResolve.js';
+import { questionsEs, shuffleArray } from '../utils/questions_es.js';
+import { questionsEn } from '../utils/questions_en.js';
+
+// Components
 import Timer from '../components/Timer.jsx';
 import Answers from '../components/Answers.jsx';
 import Music from '../components/Music.jsx';
-import { questionsEs, shuffleArray } from '../utils/questions_es.js';
-import { questionsEn } from '../utils/questions_en.js';
+import AnswerFeedback from '../components/AnswerFeedback.jsx';
+
+// @mui components
+import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
-
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 
-import { useState, useEffect } from 'react';
+//react 
+import { useState, useEffect, useRef } from 'react';
 
 
 const Playing = ({setGame}) => {
@@ -20,6 +35,12 @@ const Playing = ({setGame}) => {
   const [points, setPoints] = useState(0);
   const [goodAnswers, setGoodAnswers] = useState(0);
   const [badAnswers, setBadAnswers] = useState(0);
+  const [selectedAnswer, setSelectedAnswer] = useState('');
+  const [isHidenAnswerFeedBack, setIsHidenAnswerFeedBack] = useState(true);
+  const [isGoodAnswer, setIsGoodAnswer ] = useState(null);
+  
+  const rightAnswerRef = useRef(null);
+  const wrongAnswerRef = useRef(null);
   
   const [indexQuestion, setIndexQuestion] = useState(0);
 
@@ -48,54 +69,112 @@ const Playing = ({setGame}) => {
    
   }
   
+  const handleSelectAnswer = (answer) => {
+    setSelectedAnswer(answer);
+    
+  }
+
+  const handleContinue = () => {
+    setIsHidenAnswerFeedBack(true);
+    setIndexQuestion(n => n + 1);
+  }
+  const handleCheckAnswer = () => {
+    console.log(question, selectedAnswer);
+    if (question.goodAnswer === selectedAnswer) {
+        rightAnswerRef.current.play();
+        setIsGoodAnswer(true);
+        setGoodAnswers(goodAnswers => goodAnswers + 1);
+        setPoints(n => n + 5);
+        setTime(n => n + 5);
+      } else {
+        wrongAnswerRef.current.play();
+        setIsGoodAnswer(false);
+        setBadAnswers(badAnswers => badAnswers + 1);
+        setPoints(n => {
+          if (n > 3)
+            return (n - 3);
+          else
+            return n;
+        });
+        setTime(n => n - 3);
+      }
+      
+      setIsHidenAnswerFeedBack(false);
+      setSelectedAnswer('');
+  }
   return (
     <div>
-        <div 
-          className='image-background'
-          style={{ 
-            'background': `url(${resolveImg(question.image)}) center`}}
-        >
-          <div className='filter'>
-            <div><img src={resolveImg(question.image)}/></div>
-             <p className='question'>{question.question}</p>
-          </div>
-          
+      <div 
+        className='image-background'
+        style={{ 
+          'background': `url(${resolveImg(question.image)}) center`}}
+      >
+        <div className='filter'>
+          <div><img src={resolveImg(question.image)}/></div>
+           <p className='question'>{question.question}</p>
         </div>
+        
+      </div>
       <div className='playing-content'>
      
-      <div className='timer-container'>
-        <Timer 
-        time={time}
-        setTime={setTime}
+        <div className='timer-container'>
+          <Timer 
+          time={time}
+          setTime={setTime}
+          />
+        </div>
+      
+        <div className='music-container center'>
+          <Music/>
+        </div>
+        <Answers 
+          key={question.question}
+          question={question}
+          onChangeAnswer={handleSelectAnswer}
+        />
+        <div className='points-container'>
+          <p>{t('score')}: {points}</p>
+        </div>
+        <div className='matches-container'>
+          <div className='center'>
+            <CheckCircleOutlineIcon 
+              sx={{ fontSize: '32px', margin:'4px'}}
+              color='success'/> {goodAnswers}
+          </div>
+          <div className='center'>
+            <HighlightOffIcon
+              sx={{ fontSize: '32px', margin: '4px'}}
+              color='error'/> {badAnswers}</div>
+        </div>
+        <div className='playing__button-continue'>
+          {selectedAnswer !== '' 
+            ? <Button
+                sx={{
+                  width: '100%',
+                }}
+                variant='contained'
+                onClick={handleCheckAnswer}
+              >{ t('check')}</Button>
+            
+            : <Button
+                sx={{
+                  width: '100%',
+                }}
+                variant='contained'
+                onClick={handleCheckAnswer}
+                disabled
+              >{ t('check')}</Button>
+          }
+        </div>
+        <AnswerFeedback 
+          isHiden={isHidenAnswerFeedBack}
+          isGoodAnswer={isGoodAnswer}
+          onContinue={handleContinue}
+          goodAnswer={question.answers[question.goodAnswer]}
         />
       </div>
-      
-      <div className='music-container center'>
-        <Music/>
-      </div>
-      <Answers 
-        question={question}
-        setGoodAnswers={setGoodAnswers}
-        setBadAnswers={setBadAnswers}
-        setIndexQuestion={setIndexQuestion}
-        setPoints={setPoints}
-        setTime={setTime}
-      />
-      <div className='points-container'>
-        <p>{t('score')}: {points}</p>
-      </div>
-      <div className='matches-container'>
-        <div className='center'>
-          <CheckCircleOutlineIcon 
-            sx={{ fontSize: '32px', margin:'4px'}}
-            color='success'/> {goodAnswers}
-        </div>
-        <div className='center'>
-          <HighlightOffIcon
-            sx={{ fontSize: '32px', margin: '4px'}}
-            color='error'/> {badAnswers}</div>
-      </div>
-      </div>
+      <audio ref={rightAnswerRef} src={rightAnswerSound} />
+      <audio ref={wrongAnswerRef} src={wrongAnswerSound} />
     </div>
   );
 }

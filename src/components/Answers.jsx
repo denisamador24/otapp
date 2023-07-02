@@ -1,33 +1,26 @@
-import './Answers.css'
+// styles component
+import './Answers.css';
 
-const Answers = ({ question, setGoodAnswers, setBadAnswers, 
-setIndexQuestion, setPoints, setTime}) => {
+//react 
+import { useState } from 'react';
 
-  const handleClick = (key) => {
-    if (question.goodAnswer === key) {
-      setGoodAnswers(goodAnswers =>  goodAnswers + 1);
-      setPoints(n => n + 5);
-      setTime(n => n + 5);
-    } else {
-      setBadAnswers(badAnswers => badAnswers + 1);
-      setPoints(n => {
-        if (n > 3)
-          return (n - 3);
-        else 
-          return n;
-      });
-      setTime(n => n - 3);
-    }
-    setIndexQuestion(n => n+1);
+const Answers = ({ question, onChangeAnswer }) => {
+  const [indexSelctedItem, setIndexSelctedItem] = useState(null);
+
+  const handleSelectAnswer = (key, index) => {
+    onChangeAnswer(key);
+    setIndexSelctedItem(index)
   }
-
-  const answerItems = Object.keys(question.answers).map((key) => {
+  const answerItems = Object.keys(question.answers).map((key, index) => {
       return (
-        <li key={key}  className='answer-item'>
+        <li 
+          key={key}
+          className={ indexSelctedItem === index ? 'answer-item answer-item--selected' : 'answer-item'}
+        >
           <div 
-            onClick={() => handleClick(key)}
+            onClick={() => handleSelectAnswer(key, index)}
           >
-          {key + ') ' + question.answers[key]}
+            {key + ') ' + question.answers[key]}
           </div>
         </li>
       );

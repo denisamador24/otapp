@@ -11,6 +11,11 @@ ul {
 
 .answer-item > div {
   padding: 16px 8px;
-  border: 1px solid #1976d2;
+  border: 2px solid rgba(229,229,229,255);
   border-radius: 8px;
+}
+
+.answer-item--selected > div {
+  border-color: rgba(132,215,255,255);
+  background-color: rgba(221,243,254,255);
 }
