@@ -1,23 +1,25 @@
-const InputMultiLanguage = ({ title, values, setValues}) => {
+import CardInput from './CardInput.jsx';
+
+const InputMultiLanguage = ({ name, values, changeValues}) => {
   
   const handleChangeValue = (key, value) => {
     // key of the language
-    setValues({
-      ...values,
-      key: value
-    })
+    const newValues = JSON.parse(JSON.stringify(values))
+    newValues[key] = value;
+   changeValues(newValues);
+    
   }
   
   return (
     <>
       <CardInput>
-        <p>{title} ES: </p>
+        <p>{name} ES: </p>
         <input type='text'  value={values.es} onChange={e => handleChangeValue('es', e.target.value)}/>
         
-        <p>{title} EN: </p>
+        <p>{name} EN: </p>
         <input type='text'  value={values.en} onChange={e => handleChangeValue('en', e.target.value)}/>
         
-        <p>{title} FR: </p>
+        <p>{name} FR: </p>
         <input type='text'  value={values.fr} onChange={e => handleChangeValue('fr', e.target.value)}/>
       </CardInput>
     </>

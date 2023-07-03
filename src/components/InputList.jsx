@@ -1,33 +1,56 @@
+// @mui components
 import Button from '@mui/material/Button';
 
-const InputList = ({list, setList}) => {
+// components
+import InputMultiLanguage from './InputMultiLanguage.jsx';
+import CardInput from './CardInput.jsx';
+
+// utils
+import { valuesMultiLanguage } from '../utils/initValueMultiLanguage.js';
+
+const InputList = ({ name, list, setList }) => {
   
-    const listItem = list.map((it, index) => <input 
-              value={it}
-              onChange={ (e) => {
-                const newServicesList = list.map((changeIt, changeIndex) => index == changeIndex ? e.target.value : changeIt)
-                setList(newServicesList);
-              }}
-          />
-  );
+  const handleChangeValues = (value, index) => {
+    const newValuesArray = list.slice();
+    newValuesArray[index] = value;
+    setList(newValuesArray);
+  }
+  
+  const handleAddItem = () => {
+    setList([ ...list, valuesMultiLanguage]);
+  }
+  
+  const handleRemoveItem = () => {
+    const newServices = list.slice();
+    newServices.pop()
+    setList(newServices);
+  }
+  
+  const inputListItem = list.map((it, index) => {
+    return (
+      <InputMultiLanguage 
+        name={name + ' ' + (index + 1)}
+        values={it}
+        changeValues={(value) => handleChangeValues(value, index)} />
+    )    
+  });
   return (
-    <div>{listItem}
-          <Button
-            variant='outlined'
-            onClick={ (event) => {
-              // borrar el ultimo item de la lista
-              const newServices = list.slice();
-              newServices.pop()
-              setList(newServices);
-            }}
-          >-</Button>
-          
-          <Button
-            variant='outlined'
-            onClick={ (event) => setList([ ...list, ''])}
-          >+</Button>
-          
-          </div>
+    <CardInput>
+      <p>{name}</p>
+        <div>
+      {inputListItem}
+      <Button
+        variant='outlined'
+        onClick={handleRemoveItem}
+      >-</Button>
+      
+      <Button
+        variant='outlined'
+        onClick={handleAddItem}
+      >+</Button>
+      
+    </div>
+    </CardInput>
   )
 }
 
