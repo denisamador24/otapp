@@ -37,7 +37,7 @@ const questionsEs = { a: [
   {
     question: '¿Cuál es el río más grande de la Isla de Ometepe?',
     answers: {
-      a: 'Río Istian',
+      a: 'Río Istián',
       b: 'Río Buen Suceso',
       c: 'Río Sacramento'
     },
@@ -45,7 +45,7 @@ const questionsEs = { a: [
     image: 'q_istian'
   },
   {
-    question: '¿Cuál fue el primer colegio secundaria fundado en Ometepe ?',
+    question: '¿Cuál fue el primer colegio secundaria fundado en Altagracia ?',
     answers: {
       a: 'Inst. Nacional Jaime Marzá',
       b: 'Inst Nacional Ladislao Chwalbinsky',
@@ -55,7 +55,7 @@ const questionsEs = { a: [
     image: 'colegio'
   },
    {
-    question: '¿Dónde se pueden apreciar las esculturas de piedra hechas por la cultura chorotega ?',
+    question: '¿Dónde se pueden apreciar las esculturas de piedra echas por la cultura chorotega ?',
     answers: {
       a: 'Museo de Altagracia',
       b: 'Parroquia San Diego de Alcalá',
@@ -67,7 +67,7 @@ const questionsEs = { a: [
    {
      question: '¿Cuál es la religión que más predomina en la Isla de Ometepe?',
      answers: {
-       a: 'Religión evangénlica',
+       a: 'Religión Evangénlica',
        b: 'Religión Católica',
        c: 'Testigo de Jehova'
      },
@@ -116,10 +116,10 @@ const questionsEs = { a: [
     image: 'nicaragua'
   },
   {
-    question: '¿En qué fecha fue nombra la Isla Ometepe como  "Reserva de Biosfera"?',
+    question: '¿En qué fecha fue nombrada la Isla Ometepe como  "Reserva de Biosfera"?',
     answers: {
       a: '2 de Junio de 2010',
-      b: '16 d Diciembre 2005',
+      b: '16 de Diciembre 2005',
       c: '15 de Septiembre del 2014'
     },
     goodAnswer: 'a',
@@ -138,9 +138,9 @@ const questionsEs = { a: [
   {
     question: '¿Cuál es el nombre  náhuatl del Volcán Maderas?',
     answers: {
-      a: 'coatlan(significa lugar donde vive el sol)',
-      b: 'tametzona(significa luz de luna)',
-      c: 'aquetzalli(significa agua preciosa)'
+      a: 'Coatlan(significa lugar donde vive el sol)',
+      b: 'Tametzona(significa luz de luna)',
+      c: 'Aquetzalli(significa agua preciosa)'
     },
     goodAnswer: 'a',
     image: 'madera'
@@ -166,7 +166,7 @@ const questionsEs = { a: [
     image: 'q-cascada'
   },
   {
-    question: '¿Qué sitio turístico de la Isla de Ometepe fabrica chocolate orgánico?',
+    question: '¿Qué sitio turístico de la Isla de Ometepe fábrica chocolate orgánico?',
     answers: {
       a: 'Finca Venecia ',
       b: 'El pital ',

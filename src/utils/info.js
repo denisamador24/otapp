@@ -1,7 +1,7 @@
 const info = { es: `
 La Isla de Ometepe:
 <br/><br/>
-Ometepe,vocablo de origen náhuatl qué significa Ome: dos y tepetl:cerros,con una extensión territorial de 276 km² , es la isla más grande del mundo dentro de un lago de agua dulce. Este "Sitios Sagrado"cómo se le conoce a la Isla, comprende de dos municipios ,Moyogalpa y Altagracia. La Isla se compone por dos colosos volcanes,el  Madera y  el Concepción, unidos por un istmo  delgado y plano llamado "Istmo Istian", lo que le da a la Isla la forma de un reloj de arena u ocho.Fue  declarada por la UNESCO como reserva de biosfera en 2010.
+Ometepe,vocablo de origen náhuatl qué significa Ome: dos y tepetl:cerros,con una extensión territorial de 276 km² , es la isla más grande del mundo dentro de un lago de agua dulce. Este "Sitio Sagrado"cómo se le conoce a la Isla, comprende de dos municipios ,Moyogalpa y Altagracia. La Isla se compone por dos colosos volcanes,el  Madera y  el Concepción, unidos por un Istmo  delgado y plano llamado "Istmo Istian", lo que le da a la Isla la forma de un reloj de arena u ocho.Fue  declarada por la UNESCO como reserva de biosfera en 2010.
 <br/>
 
 En la época precolombina la poblaron tribus Caribisis de Sudamérica, Chorotegas,Nahuas,entre otras tribus, que han dejado una gran cantidad de petroglifo e ídolos de piedra distribuidos por toda la Isla que dan fe de su vivencia indígena,un ejemplo de ello son los ídolos de piedra más grande encontrado en Ometepe que se pueden apreciar en la parroquia San Diego de Alcalá, ubicada en el centro de Altagracia,al igual que en el Museo Arqueológico,en el  cual también ofrece información cultural y geológica.
