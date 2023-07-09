@@ -1,2 +1,5 @@
+package-lock.json
+
 /src/images/
 /dist
+/node_modules

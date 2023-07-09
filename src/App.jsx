@@ -5,7 +5,6 @@ import Home from './pages/Home.jsx';
 import Lugares from './pages/Lugares.jsx';
 import InfoLugar from './pages/InfoLugar.jsx';
 import Game from './pages/Game.jsx';
-import Map from './pages/Map.jsx';
 import Ships from './pages/Ships.jsx';
 import NewPlace from './pages/NewPlace.jsx';
 import AdminPlaces from './pages/AdminPlaces.jsx';
@@ -26,7 +25,6 @@ function App() {
           <Route path="/lugares" element={<Lugares/>}
           />
           <Route path="/juego" element={<Game/>} />
-          <Route path='/mapa' element={<Map/>}></Route>
           <Route path='/lugares/info/:index' element={ <InfoLugar/> } />
           <Route path='/barcos' element={ <Ships/> } />
           <Route path='/agregar' element={ <NewPlace/> } />
