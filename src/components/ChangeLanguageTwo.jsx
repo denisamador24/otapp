@@ -21,7 +21,7 @@ const ChangeLanguageTwo = () => {
         <Select onChange={handleLanguageChange}
           value={i18n.language}
           style={{ 
-            'background-color': 'white',
+            'backgroundColor': 'white',
             'height': '36px',
             'color': '#1976d2'
           }}

@@ -32,26 +32,29 @@ const Lugares = () => {
       <div className="lugares-list">
         {lugares.map( (lugar, index) => {
         
-        return <Card sx={{ maxWidth: 345 }}>
-          <CardMedia
-            sx={{ height: 160 }}  
-            image={resolveImg(lugar.images[0])}
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              {lugar.name}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {lugar.description}
-            </Typography>
-          </CardContent>
-          <CardActions sx={{ justifyContent: 'end'}}>
-            <Link to={`/lugares/info/${index}`}
-            ><Button size="small"
-            >{t('see_more')}</Button></Link>
-          </CardActions>
-        </Card>
-        
+        return (
+          <div key={lugar+index}>
+            <Card sx={{ maxWidth: 345 }}>
+              <CardMedia
+                sx={{ height: 160 }}  
+                image={resolveImg(lugar.images[0])}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  {lugar.name}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  {lugar.description}
+                </Typography>
+              </CardContent>
+              <CardActions sx={{ justifyContent: 'end'}}>
+                <Link to={`/lugares/info/${index}`}
+                ><Button size="small"
+                >{t('see_more')}</Button></Link>
+              </CardActions>
+            </Card>
+          </div>
+        )
         })
         }
       </div>

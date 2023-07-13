@@ -47,6 +47,10 @@
   font-weight: 500;
 }
 
+.slides-container--closed .image-container {
+  height: 40vh;
+}
+
 .image-container {
   height: 100%;
   display: flex !important;

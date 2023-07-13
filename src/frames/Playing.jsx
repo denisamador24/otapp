@@ -50,6 +50,7 @@ const Playing = ({setGame}) => {
     questionsEn.a = shuffleArray(questionsEn.a);
   }, []);
   
+  
   let question;
   if (i18n.language == 'es') {
     question = questionsEs.a[indexQuestion];
@@ -58,15 +59,18 @@ const Playing = ({setGame}) => {
   }
   
   
-  if (time < 1 || indexQuestion >= questionsEs.a.length) {
-    setGame('finished');
+  const handleFinishGame = () => {
     
     const maxScore = window.localStorage.getItem('max_score');
     if (maxScore < points) {
       window.localStorage.setItem('max_score', points.toString());
     } 
     window.localStorage.setItem('score', points)
-   
+    
+    setGame('finished');
+  }
+  if (time < 1) {
+    handleFinishGame()
   }
   
   const handleSelectAnswer = (answer) => {
@@ -76,7 +80,12 @@ const Playing = ({setGame}) => {
 
   const handleContinue = () => {
     setIsHidenAnswerFeedBack(true);
-    setIndexQuestion(n => n + 1);
+
+    if (indexQuestion >= questionsEs.a.length) {
+      handleFinishGame();
+    } else {
+      setIndexQuestion(n => n + 1);
+    }
   }
   const handleCheckAnswer = () => {
     console.log(question, selectedAnswer);
@@ -110,7 +119,7 @@ const Playing = ({setGame}) => {
           'background': `url(${resolveImg(question.image)}) center`}}
       >
         <div className='filter'>
-          <div><img src={resolveImg(question.image)}/></div>
+          <div><img key={question.image} src={resolveImg(question.image)}/></div>
            <p className='question'>{question.question}</p>
         </div>
         
