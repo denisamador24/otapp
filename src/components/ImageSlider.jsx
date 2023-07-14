@@ -5,6 +5,7 @@ import FullscreenIcon from '@mui/icons-material/Fullscreen';
 import FullscreenExitIcon from '@mui/icons-material/FullscreenExit';
 import Slider from 'react-slick';
 
+import './ImageSlider.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -29,28 +30,17 @@ const ImageSlider = ({ images }) => {
           {
             images.map( (image) => {
               return (
-              <div 
-                key={image} 
-                className='image-container'
-              >
+              <div key={image} >
                 <div
-                  style={{
-                    'height': '100%',
+                  className='image-container'
+                  style={{  
                     'background': `url(${resolveImg(image)}) center`
                   }}
                 >
-                  <div
-                    style={{
-                      width: '100%',
-                      height: '100%',
-                      display: 'flex',
-                      justifyContent: 'center',
-                      alignItems: 'center',
-                      backdropFilter: 'blur(10px)'
-                    }}
-                  >
-                    
-                    <div><img src={resolveImg(image)} alt={image} /></div>
+                  <div className='image-slider__filter'>
+                    <div>
+                      <img src={resolveImg(image)} alt={image} />
+                    </div>
                   </div>
                 </div>
               </div>

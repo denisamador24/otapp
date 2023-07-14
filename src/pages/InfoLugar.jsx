@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import ImageSlider from './ImageSlider';
+import ImageSlider from '../components/ImageSlider.jsx';
 
 import InfoIcon from '@mui/icons-material/Info';
 import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
@@ -11,7 +11,6 @@ import lugaresEs from '../utils/lugares_es.js';
 import lugaresEn from '../utils/lugares_en.js';
 
 const InfoLugar = () => {
-  
   const { index } = useParams();
   const { t, i18n } = useTranslation();
   const [knowOpen, setKnowOpen] = useState(false);
@@ -24,7 +23,7 @@ const InfoLugar = () => {
   }
 
   return (
-    <>
+    <section key={lugarData.name} className='lugar-page'>
       <ImageSlider images={lugarData.images} />
       
       <div className='info-lugar'>
@@ -76,7 +75,7 @@ const InfoLugar = () => {
         </div>
         }
       </div>
-    </>
+    </section>
   );
 }
 
