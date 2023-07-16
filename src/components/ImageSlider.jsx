@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import resolveImg from '../utils/imageResolve.js';
 import { slidesImageConfig } from '../utils/SlidesConfig.js';
 import FullscreenIcon from '@mui/icons-material/Fullscreen';
@@ -16,6 +16,15 @@ const ImageSlider = ({ images }) => {
   const [sliderImageSettings] = useState({...slidesImageConfig,
     beforeChange: (oldSlide, newSlide) => setCurrentSlides(newSlide),
   });
+  const sliderRef = useRef()
+
+  useEffect( () => {
+    sliderRef.current.scrollIntoView({
+      behavior: 'smooth',
+      block: 'nearest',
+      inline: 'center'
+    })
+  })
 
   let classSlider = 'slides-container'
   if (carouselOpen) {
@@ -25,7 +34,7 @@ const ImageSlider = ({ images }) => {
   }
 
   return (
-      <div className={classSlider}>
+      <div className={classSlider} ref={sliderRef}>
         <Slider {...sliderImageSettings} >
           {
             images.map( (image) => {
