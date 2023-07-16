@@ -11,7 +11,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 const ImageSlider = ({ images }) => {
   const [carouselOpen, setCarouselOpen] = useState(false);
-  
   const [currentSlides, setCurrentSlides] = useState(0);
   const [sliderImageSettings] = useState({...slidesImageConfig,
     beforeChange: (oldSlide, newSlide) => setCurrentSlides(newSlide),
@@ -24,7 +23,7 @@ const ImageSlider = ({ images }) => {
       block: 'nearest',
       inline: 'center'
     })
-  })
+  }, [])
 
   let classSlider = 'slides-container'
   if (carouselOpen) {
