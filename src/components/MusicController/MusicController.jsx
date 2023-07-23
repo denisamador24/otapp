@@ -1,4 +1,4 @@
-import './Music.css';
+import './music_controller.css';
 
 import { useRef, useEffect, useState } from 'react';
 import VolumeOffIcon from '@mui/icons-material/VolumeOff';

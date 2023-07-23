@@ -1,4 +1,4 @@
-const pathImages = '/src/images/';
+const pathImages = '/images/';
 
 const resolveImg = (nameImage) => {
   if (nameImage !== undefined && nameImage !== '') {

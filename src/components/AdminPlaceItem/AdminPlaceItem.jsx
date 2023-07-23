@@ -1,4 +1,4 @@
-import './AdminPlaceItem.css';
+import './admin_place_item.css';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete'
 import EditNoteIcon from '@mui/icons-material/EditNote';

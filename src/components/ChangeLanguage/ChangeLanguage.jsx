@@ -1,5 +1,5 @@
-import './ChangeLanguage.css';
-import resolveImg from '../utils/imageResolve.js';
+import './change_language.css';
+import resolveImg from '../../utils/imageResolve.js';
 import { FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 

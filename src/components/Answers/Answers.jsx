@@ -1,5 +1,5 @@
 // styles component
-import './Answers.css';
+import './answers.css';
 
 //react 
 import { useState } from 'react';

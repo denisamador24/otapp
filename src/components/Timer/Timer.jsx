@@ -1,5 +1,4 @@
-
-import './Timer.css';
+import './timer.css';
 import React, { useState, useEffect } from 'react';
 import TimerOutlinedIcon from '@mui/icons-material/TimerOutlined';
 

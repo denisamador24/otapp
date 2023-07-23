@@ -1,5 +1,5 @@
 // styles component
-import './AnswerFeedback.css';
+import './answer_feedback.css';
 
 // Translation 
 import { useTranslation } from 'react-i18next';
