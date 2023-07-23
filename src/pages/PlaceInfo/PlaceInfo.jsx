@@ -1,3 +1,6 @@
+// styles
+import './place_info.css';
+
 import { useParams } from 'react-router-dom';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -6,7 +9,6 @@ import ImageSlider from '../components/ImageSlider.jsx';
 import InfoIcon from '@mui/icons-material/Info';
 import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
 import EmailIcon from '@mui/icons-material/Email';
-import './InfoLugar.css';
 import lugaresEs from '../utils/lugares_es.js';
 import lugaresEn from '../utils/lugares_en.js';
 import lugaresFr from '../utils/lugares_fr.js';

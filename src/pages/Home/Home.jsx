@@ -1,30 +1,30 @@
-import { Link } from 'react-router-dom';
+import './home.css';
+
 import { useState } from 'react';
-import Button from '@mui/material/Button';
-import Header from '../components/Header.jsx';
-import SlidingPanel from '../components/SlidingPanel.jsx';
-import AutoStoriesIcon from '@mui/icons-material/AutoStories';
-import ChangeLanguageTwo from '../components/ChangeLanguageTwo.jsx';
-import MapIcon from '@mui/icons-material/Map';
-import DirectionsBoatIcon from '@mui/icons-material/DirectionsBoat';
-import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
-import PlaceIcon from '@mui/icons-material/Place';
-
-
-
-import Stack from '@mui/material/Stack';
-
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import resolveImg from '../utils/imageResolve.js'
-import info from '../utils/info.js';
 
-// Styles 
-import './Home.css';
+import Button from '@mui/material/Button';
+
+import {
+  AutoStoriesIcon,
+  MapIcon,
+  PlaceIcon,
+  DirectionsBoatIcon,
+  SportsEsportsIcon
+}  from '@mui/icons-material/AutoStories';
+
+import { Header, SlidingPanel, ChangeLanguage } from '@components';
+
+import resolveImg from '../utils/imageResolve.js'
+import info from '@data/info.js';
+
 
 const Home =  () => {
   const [openedPanel, setOpenPanel] = useState(false);
   const { t, i18n } = useTranslation();
   let infoText;
+  
   if (i18n.language == 'es') {
     infoText = info.es;
   } else if (i18n.language == 'en') {
@@ -47,7 +47,7 @@ const Home =  () => {
   return (
     <div className="home-page">
       <Header/>
-        <ChangeLanguageTwo/>
+        <ChangeLanguage/>
         <div className='read-botton'>
           <Button
             variant='outlined'

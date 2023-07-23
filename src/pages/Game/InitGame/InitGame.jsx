@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
-import './InitGame.css';
+import './init_game.css';
 import Button from '@mui/material/Button';
 import Header from '../components/Header.jsx';
 

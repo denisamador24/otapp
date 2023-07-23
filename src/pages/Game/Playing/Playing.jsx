@@ -1,5 +1,5 @@
 // styles component
-import './Playing.css';
+import './playing.css';
 
 // sounds
 import wrongAnswerSound from '/src/audio/wrong-answer.mp3';

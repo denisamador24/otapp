@@ -1,4 +1,4 @@
-import './Game.css';
+import './game.css';
 
 import InitGame from '../frames/InitGame.jsx';
 import { useState } from 'react';

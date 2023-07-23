@@ -1,10 +1,15 @@
-import './AdminPlaces.css';
+import './admin_places.css';
+
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { getPlaces } from "../firebase/firebase.js";
-import AdminPlaceItem from '../components/AdminPlaceItem.jsx';
+
 import AddIcon  from '@mui/icons-material/Add';
 import Fab from '@mui/material/Fab';
+
+import { AdminPlaceItem } from '@components/AdminPlaceItem';
+
+import { getPlaces } from "../../firebase/firebase.js";
+
 
 const AdminPlaces = () => {
   

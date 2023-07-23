@@ -1,5 +1,5 @@
 // styles componen
-import './NewPlace.css';
+import './register_place.css';
 
 // react
 import { useState, useRef, useEffect } from 'react';
@@ -12,7 +12,7 @@ import {
   uploadImage,
   getImageUrl,
   deleteImage
-} from '../firebase/firebase.js';
+} from '../../firebase/firebase.js';
 
 // @mui components
 import Button from '@mui/material/Button';

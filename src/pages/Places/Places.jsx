@@ -1,3 +1,6 @@
+// styles 
+import './places.css';
+
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import resolveImg from '../utils/imageResolve.js';
@@ -9,8 +12,6 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Header from '../components/Header';
 
-// styles 
-import './Lugares.css';
 
 import lugaresEs from '../utils/lugares_es.js';
 import lugaresEn from '../utils/lugares_en.js';

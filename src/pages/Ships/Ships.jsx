@@ -1,4 +1,4 @@
-import './Ships.css';
+import './ships.css';
 
 const Ships = () => {
   
