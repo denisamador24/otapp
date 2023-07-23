@@ -8,6 +8,7 @@ const ChangeLanguageTwo = () => {
   
   const usaFlag = 'src/images/usa.png';
   const spainFlag = 'src/images/spain.png';
+  const franceFlag = 'src/images/france.png';
   
   
   const handleLanguageChange = (event) => {
@@ -38,6 +39,13 @@ const ChangeLanguageTwo = () => {
               <div className='center'>
                 <img src={usaFlag} alt='es' style={{ width: '32px' }}/>
                 English 
+              </div>
+            </MenuItem>
+
+            <MenuItem key='m-fr' value='fr'>
+              <div className='center'>
+                <img src={franceFlag} alt='es' style={{ width: '32px' }}/>
+                Français
               </div>
             </MenuItem>
           

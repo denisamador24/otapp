@@ -14,6 +14,7 @@ import './Lugares.css';
 
 import lugaresEs from '../utils/lugares_es.js';
 import lugaresEn from '../utils/lugares_en.js';
+import lugaresFr from '../utils/lugares_fr.js';
 
 const Lugares = () => {
   const { t, i18n } = useTranslation();
@@ -22,8 +23,10 @@ const Lugares = () => {
   
   if (i18n.language == 'es'){
     lugares = lugaresEs;
-  } else {
+  } else if (i18n.language == 'en') {
     lugares = lugaresEn;
+  } else if ( i18n.language == 'fr') {
+    lugares = lugaresFr;
   }
   
   return (

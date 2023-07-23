@@ -9,6 +9,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import './InfoLugar.css';
 import lugaresEs from '../utils/lugares_es.js';
 import lugaresEn from '../utils/lugares_en.js';
+import lugaresFr from '../utils/lugares_fr.js';
 
 const InfoLugar = () => {
   const { index } = useParams();
@@ -18,8 +19,10 @@ const InfoLugar = () => {
   let lugarData; 
   if (i18n.language == 'es') {
     lugarData = lugaresEs[index];
-  } else {
+  } else if (i18n.language == 'en') {
     lugarData = lugaresEn[index];
+  } else {
+    lugarData = lugaresFr[index];
   }
 
   return (

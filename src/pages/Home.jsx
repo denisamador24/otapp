@@ -23,6 +23,17 @@ import './Home.css';
 
 const Home =  () => {
   const [openedPanel, setOpenPanel] = useState(false);
+  const { t, i18n } = useTranslation();
+  let infoText;
+  if (i18n.language == 'es') {
+    infoText = info.es;
+  } else if (i18n.language == 'en') {
+    infoText = info.en;
+  } else {
+    infoText = info.fr;
+  }
+
+
 
   const openPanel = () => {
     setOpenPanel(true);
@@ -31,7 +42,6 @@ const Home =  () => {
   const closePanel = () => {
     setOpenPanel(false);
   };
-  const { t, i18n } = useTranslation();
   
   
   return (
@@ -91,7 +101,7 @@ const Home =  () => {
           onClose={closePanel}
         >
           <img src={resolveImg('lago')} alt='Isla de Ometepe'/>
-          <p dangerouslySetInnerHTML={{ __html: i18n.language == 'es' ? info.es : info.en}}></p>
+          <p dangerouslySetInnerHTML={{ __html: infoText}}></p>
         </SlidingPanel>
       </div>
     )

@@ -48,9 +48,12 @@ const Playing = ({setGame}) => {
   useEffect( () => {
     questionsEs.a = shuffleArray(questionsEs.a);
     questionsEn.a = shuffleArray(questionsEn.a);
+
+    rightAnswerRef.current.volume = 0.5
+    wrongAnswerRef.current.volume = 0.5
   }, []);
   
-  
+
   let question;
   if (i18n.language == 'es') {
     question = questionsEs.a[indexQuestion];
@@ -79,6 +82,11 @@ const Playing = ({setGame}) => {
   }
 
   const handleContinue = () => {
+    // this return is needed when the aplicaion is on the computer
+    // the continue button is focus and when press enter or space this function is executed
+    // then the question continue without answering the question  
+    if(isHidenAnswerFeedBack) return;
+    
     setIsHidenAnswerFeedBack(true);
 
     if (indexQuestion >= questionsEs.a.length) {

@@ -2,6 +2,7 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import lan_es from './locals/es.json';
 import lan_en from './locals/en.json';
+import lan_fr from './locals/fr.json';
 
 // the translations
 // (tip move them in a JSON file and import them,
@@ -12,6 +13,9 @@ const resources = {
   },
   es: {
     translation: lan_es
+  },
+  fr: {
+    translation: lan_fr
   }
 };
 
