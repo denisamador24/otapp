@@ -1,14 +1,13 @@
 import './change_language.css';
-import resolveImg from '../../utils/imageResolve.js';
 import { FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 
 const ChangeLanguageTwo = () => {
   const { i18n } = useTranslation('translation');
   
-  const usaFlag = 'src/images/usa.png';
-  const spainFlag = 'src/images/spain.png';
-  const franceFlag = 'src/images/france.png';
+  const usaFlag = '/images/usa.png';
+  const spainFlag = '/images/spain.png';
+  const franceFlag = '/images/france.png';
   
   
   const handleLanguageChange = (event) => {

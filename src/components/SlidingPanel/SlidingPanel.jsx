@@ -1,6 +1,8 @@
+import './sliding_panel.css';
+
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import './sliding_panel.css'; // Archivo de estilos CSS para el panel deslizante
+
 import Button from '@mui/material/Button';
 import CloseIcon from '@mui/icons-material/Close';
 

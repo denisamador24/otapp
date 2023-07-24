@@ -1,9 +1,11 @@
 import './game.css';
 
-import InitGame from '../frames/InitGame.jsx';
 import { useState } from 'react';
-import Playing from '../frames/Playing.jsx';
-import FinisedGame from '../frames/FinishedGame.jsx';
+
+import InitGame from './InitGame/InitGame.jsx';
+import Playing from './Playing/Playing.jsx';
+import FinisedGame from './FinishedGame/FinishedGame.jsx';
+
 const Game = () => {
   const [game, setGame] = useState('init');
   

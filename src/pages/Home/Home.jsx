@@ -7,20 +7,20 @@ import { useTranslation } from 'react-i18next';
 import Button from '@mui/material/Button';
 
 import {
-  AutoStoriesIcon,
-  MapIcon,
-  PlaceIcon,
-  DirectionsBoatIcon,
-  SportsEsportsIcon
-}  from '@mui/icons-material/AutoStories';
+  AutoStories as AutoStoriesIcon,
+  Map as MapIcon,
+  Place as PlaceIcon,
+  DirectionsBoat as DirectionsBoatIcon,
+  SportsEsports as SportsEsportsIcon
+}  from '@mui/icons-material';
 
 import { Header, SlidingPanel, ChangeLanguage } from '@components';
 
-import resolveImg from '../utils/imageResolve.js'
+import resolveImg from '@utils/imageResolve.js'
 import info from '@data/info.js';
 
 
-const Home =  () => {
+const Home = () => {
   const [openedPanel, setOpenPanel] = useState(false);
   const { t, i18n } = useTranslation();
   let infoText;
@@ -32,8 +32,6 @@ const Home =  () => {
   } else {
     infoText = info.fr;
   }
-
-
 
   const openPanel = () => {
     setOpenPanel(true);

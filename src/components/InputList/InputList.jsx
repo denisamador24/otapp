@@ -2,11 +2,10 @@
 import Button from '@mui/material/Button';
 
 // components
-import InputMultiLanguage from './InputMultiLanguage.jsx';
-import CardInput from './CardInput.jsx';
+import { InputMultiLanguage, CardInput } from '@components';
 
 // utils
-import { valuesMultiLanguage } from '../utils/initValueMultiLanguage.js';
+import { valuesMultiLanguage } from '@data/initValueMultiLanguage.js';
 
 const InputList = ({ name, list, setList }) => {
   

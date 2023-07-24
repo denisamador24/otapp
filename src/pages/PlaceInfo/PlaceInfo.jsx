@@ -1,17 +1,20 @@
 // styles
 import './place_info.css';
 
-import { useParams } from 'react-router-dom';
 import { useState } from 'react';
+import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import ImageSlider from '../components/ImageSlider.jsx';
+import { ImageSlider } from '@components';
 
-import InfoIcon from '@mui/icons-material/Info';
-import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
-import EmailIcon from '@mui/icons-material/Email';
-import lugaresEs from '../utils/lugares_es.js';
-import lugaresEn from '../utils/lugares_en.js';
-import lugaresFr from '../utils/lugares_fr.js';
+import {
+  Info as InfoIcon, 
+  ContactPhone as ContactPhoneIcon, 
+  Email as EmailIcon
+} from '@mui/icons-material';
+
+import lugaresEs from '@data/lugares_es.js';
+import lugaresEn from '@data/lugares_en.js';
+import lugaresFr from '@data/lugares_fr.js';
 
 const InfoLugar = () => {
   const { index } = useParams();

@@ -2,7 +2,7 @@
   width: 100%;
   height: 100vh;
   position: relative;
-  background-image: url('/src/images/cascada1.jpg');
+  background-image: url('/images/cascada1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }

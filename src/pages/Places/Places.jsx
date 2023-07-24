@@ -1,21 +1,24 @@
-// styles 
 import './places.css';
 
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import resolveImg from '../utils/imageResolve.js';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Header from '../components/Header';
 
+import resolveImg from '@utils/imageResolve.js';
 
-import lugaresEs from '../utils/lugares_es.js';
-import lugaresEn from '../utils/lugares_en.js';
-import lugaresFr from '../utils/lugares_fr.js';
+import { 
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Button,
+  Typography
+} from '@mui/material';
+
+import { Header } from '@components';
+
+import lugaresEs from '@data/lugares_es.js';
+import lugaresEn from '@data/lugares_en.js';
+import lugaresFr from '@data/lugares_fr.js';
 
 const Lugares = () => {
   const { t, i18n } = useTranslation();

@@ -1,9 +1,8 @@
-// styles componen
 import './register_place.css';
 
-// react
 import { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Resizer from "react-image-file-resizer";
 
 // firebase functions
 import {
@@ -12,20 +11,21 @@ import {
   uploadImage,
   getImageUrl,
   deleteImage
-} from '../../firebase/firebase.js';
+} from '@utils/firebase.js';
 
 // @mui components
 import Button from '@mui/material/Button';
 
 // components
-import InputMultiLanguage from '../components/InputMultiLanguage.jsx';
-import InputList from '../components/InputList.jsx';
-import CardInput from '../components/CardInput.jsx';
-import SumitButton from '../components/SumitButton.jsx';
+import {
+  InputMultiLanguage, 
+  InputList, 
+  CardInput, 
+  SumitButton 
+} from '@components';
 
 // utils
-import Resizer from "react-image-file-resizer";
-import { valuesMultiLanguage } from '../utils/initValueMultiLanguage.js';
+import { valuesMultiLanguage } from '@data/initValueMultiLanguage.js';
 
 const NewPlace = () => {
   const [name, setName] = useState('') ;
@@ -36,8 +36,6 @@ const NewPlace = () => {
   const [description, setDescription] = useState(valuesMultiLanguage);
   const [know, setKnow] = useState(valuesMultiLanguage);
   
-  //const [imagesCloud, setImagesCloud] = useState([]);
-  //const [imagesCloudToRemove, setImagesCloudToRemove] = useState([]);
   const [services, setServices] = useState([]);
   const [activities, setActivities] = useState([]);
   const [isAddingPlace, setIsAddingPlace] = useState(false);

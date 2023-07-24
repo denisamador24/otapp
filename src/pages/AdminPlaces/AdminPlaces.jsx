@@ -6,9 +6,9 @@ import { useNavigate } from 'react-router-dom';
 import AddIcon  from '@mui/icons-material/Add';
 import Fab from '@mui/material/Fab';
 
-import { AdminPlaceItem } from '@components/AdminPlaceItem';
+import { AdminPlaceItem } from '@components';
 
-import { getPlaces } from "../../firebase/firebase.js";
+import { getPlaces } from "@utils/firebase.js";
 
 
 const AdminPlaces = () => {

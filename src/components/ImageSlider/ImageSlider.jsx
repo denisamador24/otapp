@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react'
-import resolveImg from '../utils/imageResolve.js';
-import { slidesImageConfig } from '../utils/SlidesConfig.js';
+import resolveImg from '@utils/imageResolve.js';
+import { slidesImageConfig } from '@utils/SlidesConfig.js';
 import FullscreenIcon from '@mui/icons-material/Fullscreen';
 import FullscreenExitIcon from '@mui/icons-material/FullscreenExit';
 import Slider from 'react-slick';

@@ -1,7 +1,4 @@
-// @mui components
 import { Button } from '@mui/material';
-//import { Autorenew } from '@mui/icons-material';
-
 
 const SumitButton = ({ onClick, loading, children }) => {
   

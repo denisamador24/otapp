@@ -3,7 +3,7 @@ import './music_controller.css';
 import { useRef, useEffect, useState } from 'react';
 import VolumeOffIcon from '@mui/icons-material/VolumeOff';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
-import music from '/src/audio/ometepe.mp3';
+import music from '/audio/ometepe.mp3';
 
 const Music = () => {
   const audioRef = useRef(null);

@@ -1,9 +1,10 @@
 import './admin_place_item.css';
+
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete'
 import EditNoteIcon from '@mui/icons-material/EditNote';
 import { Link, useNavigate } from 'react-router-dom';
-import { deletePlace } from '../firebase/firebase.js';
+import { deletePlace } from '@utils/firebase.js';
 
 const AdminPlaceItem = ({ place, setPlaces }) => {
   const navigate = useNavigate();

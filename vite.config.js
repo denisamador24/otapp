@@ -16,8 +16,7 @@ export default defineConfig({
       '@components': path.resolve(__dirname, 'src/components'),
       '@pages': path.resolve(__dirname, 'src/components'),
       '@data': path.resolve(__dirname, 'src/data'),
-      '@utils': path.resolve(__dirname, 'src/utils'),
-      '@firebase': path.resolve(__dirname, 'src/firebase')
+      '@utils': path.resolve(__dirname, 'src/utils')
     }
   }
 })

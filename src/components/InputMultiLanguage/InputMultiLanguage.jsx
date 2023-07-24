@@ -1,4 +1,4 @@
-import CardInput from './CardInput.jsx';
+import { CardInput } from '@components';
 
 const InputMultiLanguage = ({ name, values, changeValues}) => {
   

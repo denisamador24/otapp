@@ -1,8 +1,8 @@
-import { useTranslation } from 'react-i18next';
-
 import './init_game.css';
+
 import Button from '@mui/material/Button';
-import Header from '../components/Header.jsx';
+import { useTranslation } from 'react-i18next';
+import { Header } from '@components';
 
 const InitGame = ({setGame}) => {
   const { t } = useTranslation();

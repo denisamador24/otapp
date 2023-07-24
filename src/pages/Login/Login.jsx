@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import adminPassword from "../utils/password.js"
+import adminPassword from "@utils/password.js";
+
 const Login = () => {
   const navigate = useNavigate();
   

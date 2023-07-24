@@ -1,6 +1,7 @@
 import './finished_game.css';
+
 import Button from '@mui/material/Button';
-import Header from '../components/Header.jsx';
+import { Header } from '@components';
 import { useTranslation } from 'react-i18next';
 
 const FinishedGame = ({ setGame }) => {

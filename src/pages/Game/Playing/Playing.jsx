@@ -2,26 +2,22 @@
 import './playing.css';
 
 // sounds
-import wrongAnswerSound from '/src/audio/wrong-answer.mp3';
-import rightAnswerSound from '/src/audio/right-answer.mp3';
+import wrongAnswerSound from '/audio/wrong-answer.mp3';
+import rightAnswerSound from '/audio/right-answer.mp3';
 
 // translation
 import { useTranslation } from 'react-i18next';
 
-// utils
-import  resolveImg  from '../utils/imageResolve.js';
-import { questionsEs, shuffleArray } from '../utils/questions_es.js';
-import { questionsEn } from '../utils/questions_en.js';
+// data
+import  resolveImg  from '@utils/imageResolve.js';
+import { questionsEs, shuffleArray } from '@data/questions_es.js';
+import { questionsEn } from '@data/questions_en.js';
 
 // Components
-import Timer from '../components/Timer.jsx';
-import Answers from '../components/Answers.jsx';
-import Music from '../components/Music.jsx';
-import AnswerFeedback from '../components/AnswerFeedback.jsx';
+import { Timer, Answers, MusicController, AnswerFeedback } from '@components';
 
 // @mui components
 import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 
@@ -49,8 +45,8 @@ const Playing = ({setGame}) => {
     questionsEs.a = shuffleArray(questionsEs.a);
     questionsEn.a = shuffleArray(questionsEn.a);
 
-    rightAnswerRef.current.volume = 0.5
-    wrongAnswerRef.current.volume = 0.5
+    rightAnswerRef.current.volume = 0.3
+    wrongAnswerRef.current.volume = 0.3
   }, []);
   
 
@@ -142,7 +138,7 @@ const Playing = ({setGame}) => {
         </div>
       
         <div className='music-container center'>
-          <Music/>
+          <MusicController/>
         </div>
         <Answers 
           key={question.question}
