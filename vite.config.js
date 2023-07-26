@@ -5,9 +5,6 @@ import path from 'node:path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  build: {
-    outDir: 'dist2'
-  },
   server: {
     host: '0.0.0.0'
   },

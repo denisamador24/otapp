@@ -3,5 +3,5 @@ firebase-debug.log
 
 /public/images
 /dist
-/dist2
 /node_modules
+/.firebase

@@ -38,7 +38,7 @@ const Playing = ({setGame}) => {
   const rightAnswerRef = useRef(null);
   const wrongAnswerRef = useRef(null);
   
-  const [indexQuestion, setIndexQuestion] = useState(0);
+  const [indexQuestion, setIndexQuestion] = useState(17);
 
   
   useEffect( () => {
@@ -51,9 +51,12 @@ const Playing = ({setGame}) => {
   
 
   let question;
+  let lengthQuestions;
   if (i18n.language == 'es') {
     question = questionsEs.a[indexQuestion];
+    lengthQuestions = questionsEs.a.length
   } else {
+    lengthQuestions = questionsEn.a.length
     question = questionsEn.a[indexQuestion];
   }
   
@@ -85,7 +88,7 @@ const Playing = ({setGame}) => {
     
     setIsHidenAnswerFeedBack(true);
 
-    if (indexQuestion >= questionsEs.a.length) {
+    if (indexQuestion >= (lengthQuestions - 1) ) {
       handleFinishGame();
     } else {
       setIndexQuestion(n => n + 1);
