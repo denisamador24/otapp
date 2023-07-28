@@ -11,3 +11,4 @@ export { default as MusicController } from './MusicController/MusicController.js
 export { default as SlidingPanel } from './SlidingPanel/SlidingPanel.jsx'
 export { default as SumitButton } from './SumitButton/SumitButton.jsx'
 export { default as Timer } from './Timer/Timer.jsx'
+export { default as Navbar } from './Navbar/Navbar.jsx'

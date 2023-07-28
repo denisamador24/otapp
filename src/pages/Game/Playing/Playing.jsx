@@ -10,8 +10,9 @@ import { useTranslation } from 'react-i18next';
 
 // data
 import  resolveImg  from '@utils/imageResolve.js';
-import { questionsEs, shuffleArray } from '@data/questions_es.js';
+import { questionsEs } from '@data/questions_es.js';
 import { questionsEn } from '@data/questions_en.js';
+import shuffleArray from '@utils/shuffleArray.js';
 
 // Components
 import { Timer, Answers, MusicController, AnswerFeedback } from '@components';

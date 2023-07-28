@@ -1,17 +1,30 @@
-import './header.css';
+import logo from '/logo.png'
+import { Navbar } from '@components'
+import { useTranslation } from 'react-i18next'
 
-const Header = () => {
-  
+
+export const Header = () => {
+  const { t } = useTranslation()
+
   return (
-    <div className='header'>
-      <div className='logo-container'>
-        <img src='/logo.png'/>
-      </div>
-      <div className='title-container'>
-        <h1>OTAPP</h1>
-      </div>
-    </div>
-  );
+    <header>
+      <section className='header_top'>
+        <div className='header__logo'>
+          <img src={logo} alt="Logo" />
+          <h1>OTAPP</h1>
+        </div>
+        <div className='header__navbar'>
+          <Navbar />
+        </div>
+      </section>
+      <section className='header_bottom'>
+        <h2>{ t('welcome-ometepe') }</h2>
+        <div className='header__pages'>
+
+        </div>
+      </section>
+    </header>
+  )
 }
 
-export default Header;
+export default Header
