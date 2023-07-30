@@ -1,19 +1,66 @@
-.header {
+header {
+  height: 60vh;
+  padding: 16px;
+  position: relative;
+  background-image: url('/images/lago.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+header .background-gradient {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(0.50turn, #0000001e, transparent, rgba(0, 0, 0, 0.722) 100%);
+}
+
+.header_container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+header .header-top {
   width: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  padding: 4px 8px;
-  background-color: #1976d2;
+  justify-content: space-between;
+  padding: 4px 8px; 
 }
 
-.header .logo-container img {
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__logo img {
   width: 48px;
-  height: 48  px;
+  height: 48px;
 }
 
-.header .title-container h1 {
+.header__logo h1 {
   margin-left: 4px;
   font-size: 24px;
   color: white;
-  
+}
+
+.header-bottom {
+  position: absolute;
+  bottom: 32px;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+.header-bottom h2{
+  font-size: 50px;
+  color: white;
 }

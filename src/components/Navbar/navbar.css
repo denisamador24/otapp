@@ -1,0 +1,45 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar__links {
+  margin: 0 16px;
+  display: none;
+}
+
+.navbar__links ul {
+  display: flex;
+  flex-direction: row;
+  gap: 8px 16px;
+}
+
+.navbar__menu {
+  position: relative;
+  margin: 0 16px;
+}
+
+.navbar__menu-container {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  padding: 16px;
+  background-color: white ;
+}
+
+.navbar__menu-container_links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px  ;
+}
+
+@media (min-width: 720px){
+  .navbar__links {
+    display: block;
+  }
+
+  .navbar__menu {
+    display: none;
+  }
+}

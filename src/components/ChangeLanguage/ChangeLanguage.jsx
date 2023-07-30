@@ -4,12 +4,12 @@ import { useTranslation } from 'react-i18next';
 
 const ChangeLanguageTwo = () => {
   const { i18n } = useTranslation('translation');
-  
+
   const usaFlag = '/images/usa.png';
   const spainFlag = '/images/spain.png';
   const franceFlag = '/images/france.png';
-  
-  
+
+
   const handleLanguageChange = (event) => {
     const selectedLanguage = event.target.value;
     i18n.changeLanguage(selectedLanguage)
@@ -20,38 +20,42 @@ const ChangeLanguageTwo = () => {
       <FormControl>
         <Select onChange={handleLanguageChange}
           value={i18n.language}
-          style={{ 
-            'backgroundColor': 'white',
-            'height': '36px',
-            'color': '#1976d2'
+          sx={{
+            backgroundColor: 'white',
+            height: '38px '
           }}
         >
-          
-            <MenuItem key='m-es' value='es'>
-              <div className='center'>
-                <img src={spainFlag} alt='es' style={{ width: '32px' }} />
-                Español
-              </div>
-            </MenuItem>
-            
-            <MenuItem key='m-en' value='en'>
-              <div className='center'>
-                <img src={usaFlag} alt='es' style={{ width: '32px' }}/>
-                English 
-              </div>
-            </MenuItem>
+          <MenuItem key='m-es' value='es'>
+            <LanguageMenuItem flag={spainFlag} text='Español' />
+          </MenuItem>
 
-            <MenuItem key='m-fr' value='fr'>
-              <div className='center'>
-                <img src={franceFlag} alt='es' style={{ width: '32px' }}/>
-                Français
-              </div>
-            </MenuItem>
-          
+          <MenuItem key='m-en' value='en'>
+          <LanguageMenuItem flag={usaFlag} text='English' />
+          </MenuItem>
+
+          <MenuItem key='m-fr' value='fr'>
+            <LanguageMenuItem flag={franceFlag} text='Français' />
+          </MenuItem>
         </Select>
       </FormControl>
     </div>
   );
 };
+
+function LanguageMenuItem({ flag, text }) {
+
+  return (
+    <div className='center'>
+      <img 
+        src={flag}
+        alt={text} 
+        style={{
+           width: '32px',
+           marginRight: '4px'
+          }} />
+      <span>{text}</span>
+    </div>
+  )
+}
 
 export default ChangeLanguageTwo;
