@@ -19,57 +19,18 @@ export const Header = () => {
       <div className='background-gradient'></div>
       <div className='header_container'>
         <section className='header-top'>
-          <div className='header__logo'>
-            <img src={logo} alt="Logo" />
-            <h1>OTAPP</h1>
-          </div>
+          <Link to='/'>
+            <div className='header__logo'>
+              <img src={logo} alt="Logo" />
+              <h1>OTAPP</h1>
+            </div>
+          </Link>
           <div className='header__navbar'>
             <Navbar />
           </div>
         </section>
         <section className='header-bottom'>
-          <h2>{t('welcome-ometepe')}</h2>
-          <div className='header__pages'>
-            <Link to='/lugares'>
-              <Button
-                size='large'
-                sx={{ width: '250px' }}
-                variant='contained'
-                startIcon={<PlaceIcon />}
-              >
-                {t('places')}
-              </Button>
-            </Link>
-
-            <Link to='/juego'>
-              <Button
-                size='large'
-                sx={{ width: '250px' }}
-                variant='contained'
-                startIcon={<SportsEsportsIcon />}
-              >
-                {t('play')}
-              </Button>
-            </Link>
-            <Link to='https://www.google.com/maps/@11.4738551,-85.5728412,11z'>
-              <Button
-                size='large'
-                sx={{ width: '250px' }}
-                variant='contained'
-                startIcon={<MapIcon />}
-              >
-                {t('map')}
-              </Button>
-            </Link>
-            <Link to='/barcos'>
-              <Button
-                size='large'
-                sx={{ width: '250px' }}
-                variant='contained'
-                startIcon={<DirectionsBoatIcon />}
-              >{t('ship')}</Button>
-            </Link>
-          </div>
+          <h2>{t('welcome_to_ometepe')}</h2>
         </section>
       </div>
 

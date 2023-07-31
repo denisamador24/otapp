@@ -6,77 +6,66 @@ import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ImageSlider } from '@components';
 
-import {
-  Info as InfoIcon, 
-  ContactPhone as ContactPhoneIcon, 
-  Email as EmailIcon
-} from '@mui/icons-material';
+import InfoIcon from '@mui/icons-material/Info'
+import ContactPhoneIcon from '@mui/icons-material/ContactPhone'
+import EmailIcon from '@mui/icons-material/Email'
 
-import lugaresEs from '@data/lugares_es.js';
-import lugaresEn from '@data/lugares_en.js';
-import lugaresFr from '@data/lugares_fr.js';
+import getPlacesData from '@utils/getPlacesData.js'
 
 const InfoLugar = () => {
   const { index } = useParams();
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [knowOpen, setKnowOpen] = useState(false);
   
-  let lugarData; 
-  if (i18n.language == 'es') {
-    lugarData = lugaresEs[index];
-  } else if (i18n.language == 'en') {
-    lugarData = lugaresEn[index];
-  } else {
-    lugarData = lugaresFr[index];
-  }
+  const place = getPlacesData(index)
 
   return (
-    <section key={lugarData.name} className='lugar-page'>
-      <ImageSlider images={lugarData.images} />
+    <section key={place.name} className='lugar-page'>
+      <ImageSlider images={place.images} />
       
       <div className='info-lugar'>
-        <h2>{lugarData.name}</h2>
+        <h2>{place.name}</h2>
         <p className='address'
-          dangerouslySetInnerHTML={{ __html: lugarData.address}}
+          dangerouslySetInnerHTML={{ __html: place.address}}
         ></p>
         
         <p className='description'
-          dangerouslySetInnerHTML={{ __html: lugarData.description}}
+          dangerouslySetInnerHTML={{ __html: place.description}}
         ></p>
         
-        {lugarData.phone !== '' && <p className='phone p-center'><ContactPhoneIcon/><a href={`tel:${lugarData.phone}`}>{lugarData.phone}</a></p>}
+        {place.phone !== '' && <p className='phone p-center'><ContactPhoneIcon/><a href={`tel:${place.phone}`}>{place.phone}</a></p>}
         
-        {lugarData.email !== '' && <p className='phone p-center'>
+        {place.email !== '' && <p className='phone p-center'>
             <EmailIcon/>
-            <a href={`mailto:${lugarData.email}`}>{lugarData.email}
+            <a href={`mailto:${place.email}`}>{place.email}
             </a>
           </p>}
         
-        {lugarData.services.length > 0 &&<div className='services'> 
+        {place.services.length > 0 &&<div className='services'> 
             <p className='list-title'>{t('services')}</p>
             <ul>
-              {lugarData.services.map( (service, index) => <li key={index}>
+              {place.services.map( (service, index) => <li key={index}>
                 <p dangerouslySetInnerHTML={{ __html: service }}></p>
               </li>)}
             </ul>
           </div>
           }
           
-          {lugarData.activities.length > 0 &&<div className='activities'> 
+          {place.activities.length > 0 &&<div className='activities'> 
             <p className='list-title'>{t('activities')}</p>
             <ul>
-              {lugarData.activities.map( (activity, index) => <li key={index}>
+              {place.activities.map( (activity, index) => <li key={index}>
                 <p dangerouslySetInnerHTML={{ __html: activity }}></p>
               </li>)}
             </ul>
           </div>
           }
           
-        { (lugarData.know !== '' && lugarData.know !== undefined) && <div className='know'>
+        { (place.know !== '' && place.know !== undefined) && <div className='know'>
             <p className='p-center'
               onClick={() => setKnowOpen(!knowOpen)}
             >{t('did_you_know')}:  <InfoIcon/></p>
-            <div className={knowOpen ? 'know-bubble visibility' : 'know-bubble invisibility'}> <p dangerouslySetInnerHTML={{ __html: lugarData.know }} ></p>
+            <div className={knowOpen ? 'know-bubble visibility' : 'know-bubble invisibility'}> <p dangerouslySetInnerHTML={{ __html: place.know }} ></p>
             <div></div>
           </div>
           

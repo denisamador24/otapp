@@ -64,3 +64,15 @@ header .header-top {
   font-size: 50px;
   color: white;
 }
+
+@media (min-width: 720px) {
+  .header_container {
+    margin: 8px 16px;
+  }
+}
+
+@media (min-width: 900px) {
+  .header_container {
+    margin: 16px 32px;
+  }
+}

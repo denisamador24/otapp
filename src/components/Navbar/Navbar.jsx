@@ -1,18 +1,33 @@
 import './navbar.css'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { ChangeLanguage } from '@components'
+
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
 const Navbar = () => {
+  const { t } = useTranslation()
   const [toggleMenu, setToggleMenu] = useState(false)
 
   const Links = (
     <ul>
-      <li><a href="#info">info</a></li>
-      <li><a href="#pages">Pagesskdishdihasidhasi</a></li>
-      <li><a href="ships">Ships</a></li>
-      <li><a href="game">Game</a></li>
+      <li className='center'>
+        <Link to='/'>{t('home')}</Link>
+      </li>
+      <li>
+        <Link to="/#info">info</Link>
+      </li>
+      <li>
+        <Link to="/lugares">{t('places')}</Link>
+      </li>
+      <li>
+        <Link to="/barcos">{t('ship')}</Link>
+      </li>
+      <li>
+        <Link to="/juego">{t('play')}</Link>
+      </li>
     </ul>
   )
 

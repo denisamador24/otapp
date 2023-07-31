@@ -5,7 +5,7 @@ nav {
 }
 
 .navbar__links {
-  margin: 0 16px;
+  margin: 0 32px;
   display: none;
 }
 
@@ -15,6 +15,24 @@ nav {
   gap: 8px 16px;
 }
 
+
+.navbar__links ul li {
+  padding: 2px;
+  letter-spacing: 2px;
+  border-bottom: 2px solid white;
+}
+
+.navbar__links ul li:hover {
+  transform: translateY(-2px);
+  transition-timing-function: ease-in;
+  transition-duration: 200ms;
+}
+
+.navbar__links ul a {
+  font-size: 18px;
+  text-shadow: 2px 2px 4px black;
+  color: white;
+}
 .navbar__menu {
   position: relative;
   margin: 0 16px;

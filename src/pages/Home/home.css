@@ -1,6 +1,9 @@
 .home-page {
   width: 100%;
-  position: relative;
+}
+
+.home-page__margin-section {
+  margin: 32px 16px;
 }
 
 .read-botton {
@@ -19,8 +22,8 @@
   gap: 16px;
 }
 
-@media (min-width: 600px) {
-  .home-page{
-    gap: 32px;
+@media (min-width: 720px) {
+  .home-page__margin-section {
+    margin: 68px 32px;
   }
 }

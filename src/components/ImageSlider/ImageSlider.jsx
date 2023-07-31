@@ -1,5 +1,4 @@
 import { useEffect, useState, useRef } from 'react'
-import resolveImg from '@utils/imageResolve.js';
 import { slidesImageConfig } from '@utils/SlidesConfig.js';
 import FullscreenIcon from '@mui/icons-material/Fullscreen';
 import FullscreenExitIcon from '@mui/icons-material/FullscreenExit';
@@ -42,12 +41,12 @@ const ImageSlider = ({ images }) => {
                 <div
                   className='image-container'
                   style={{  
-                    'background': `url(${resolveImg(image)}) center`
+                    'background': `url(${image}) center`
                   }}
                 >
                   <div className='image-slider__filter'>
                     <div>
-                      <img src={resolveImg(image)} alt={image} />
+                      <img src={image} alt={image} />
                     </div>
                   </div>
                 </div>

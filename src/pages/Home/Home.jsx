@@ -15,6 +15,7 @@ import {
 } from '@mui/icons-material';
 
 import { Header, SlidingPanel } from '@components';
+import PlacesPreview from './sections/PlaceList/PlacesPreview';
 
 import resolveImg from '@utils/imageResolve.js'
 import info from '@data/info.js';
@@ -45,21 +46,16 @@ const Home = () => {
   return (
     <div className="home-page">
       <Header />
-      {/* <div className='read-botton'>
-        <Button
-          variant='outlined'
-          onClick={openPanel}
-          endIcon={<AutoStoriesIcon />}
-        >Info</Button>
-      </div> */}
-
-      <SlidingPanel
+      <div id='places' className='home-page__margin-section'>
+        <PlacesPreview />
+      </div>
+      {/* <SlidingPanel
         isOpen={openedPanel}
         onClose={closePanel}
       >
         <img src={resolveImg('lago')} alt='Isla de Ometepe' />
         <p dangerouslySetInnerHTML={{ __html: infoText }}></p>
-      </SlidingPanel>
+      </SlidingPanel> */}
     </div>
   )
 }
