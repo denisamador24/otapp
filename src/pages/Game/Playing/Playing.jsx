@@ -39,7 +39,7 @@ const Playing = ({setGame}) => {
   const rightAnswerRef = useRef(null);
   const wrongAnswerRef = useRef(null);
   
-  const [indexQuestion, setIndexQuestion] = useState(17);
+  const [indexQuestion, setIndexQuestion] = useState(0);
 
   
   useEffect( () => {
@@ -96,7 +96,6 @@ const Playing = ({setGame}) => {
     }
   }
   const handleCheckAnswer = () => {
-    console.log(question, selectedAnswer);
     if (question.goodAnswer === selectedAnswer) {
         rightAnswerRef.current.play();
         setIsGoodAnswer(true);

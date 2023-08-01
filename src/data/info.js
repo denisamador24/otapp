@@ -1,7 +1,11 @@
+const j = <>
+  <p>ksksndksndk</p>
+</>
+
 const info = { 
   es: `
-  La Isla de Ometepe:
-  <br/><br/>
+  <h3>La Isla de Ometepe</h3>
+  
   Ometepe,vocablo de origen náhuatl qué significa Ome: dos y tepetl:cerros,con una extensión territorial de 276 km² , es la isla más grande del mundo dentro de un lago de agua dulce. Este "Sitio Sagrado"cómo se le conoce a la Isla, comprende de dos municipios ,Moyogalpa y Altagracia. La Isla se compone por dos colosos volcanes,el  Madera y  el Concepción, unidos por un Istmo  delgado y plano llamado "Istmo Istian", lo que le da a la Isla la forma de un reloj de arena u ocho.Fue  declarada por la UNESCO como reserva de biosfera en 2010.
   <br/>
 

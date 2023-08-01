@@ -1,0 +1,12 @@
+.info-article {
+  margin-top: 128px;
+}
+
+.info-article h3 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.info-article p {
+  line-height: 32px;
+}

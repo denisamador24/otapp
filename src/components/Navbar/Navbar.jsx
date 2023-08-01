@@ -13,11 +13,11 @@ const Navbar = () => {
 
   const Links = (
     <ul>
-      <li className='center'>
-        <Link to='/'>{t('home')}</Link>
+      <li>
+        <Link to='/info'>Info</Link>
       </li>
       <li>
-        <Link to="/#info">info</Link>
+        <Link to='https://maps.google.com'>{t('map')}</Link>
       </li>
       <li>
         <Link to="/lugares">{t('places')}</Link>

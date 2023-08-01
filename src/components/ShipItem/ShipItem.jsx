@@ -1,20 +1,20 @@
-import React from 'react'
+import './ship_item.css'
 
-const ShipItem = ({ name, schedule }) => {
+const ShipItem = ({ name, schedule, searchedHour }) => {
   const places = Object.keys(schedule)
 
   return (
     <article className='ship-item'>
       <h5>{name}</h5>
       <div className='ship-item__schedule'>
-        <ScheduleRoute place={places[0]} schedule={schedule} />
-        <ScheduleRoute place={places[1]} schedule={schedule} />
+        <ScheduleRoute place={places[0]} schedule={schedule} searchedHour={searchedHour} />
+        <ScheduleRoute place={places[1]} schedule={schedule} searchedHour={searchedHour}/>
       </div>
     </article>
   )
 }
 
-function ScheduleRoute({ place, schedule }) {
+function ScheduleRoute({ place, schedule, searchedHour }) {
   const hourList = schedule[place]
 
   return (
@@ -22,7 +22,10 @@ function ScheduleRoute({ place, schedule }) {
       <p>{place}</p>
       <ul>
         {hourList.map((hour, index) => (
-          <li key={index}>{hour}</li>
+          <li 
+            key={index}
+            className={searchedHour == hour ? 'focus' : ''}
+          >{hour}</li>
         ))}
       </ul>
     </div>

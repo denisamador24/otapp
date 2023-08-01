@@ -1,5 +1,11 @@
-.ships-container iframe {
-  width: 100%;
-  height: 100vh;
-  border: none;
+.ships-page__ships-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-around;
+
+}
+
+.ships-page__ships-container {
+  margin-top: 32px;
 }

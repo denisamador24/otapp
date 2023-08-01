@@ -1,6 +1,6 @@
-.lugares-list {
-  margin-top: 16px;
-  display: grid;
-  gap: 32px;
-  justify-content: center;
+.places-page main ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: space-around;
 }

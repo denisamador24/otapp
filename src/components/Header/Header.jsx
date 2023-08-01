@@ -2,17 +2,12 @@ import './header.css'
 import logo from '/logo.png'
 import { Navbar } from '@components'
 import { useTranslation } from 'react-i18next'
-import { Button } from '@mui/material'
 import { Link } from 'react-router-dom'
 
-// icons 
-import PlaceIcon from '@mui/icons-material/Place'
-import MapIcon from '@mui/icons-material/Map'
-import DirectionsBoatIcon from '@mui/icons-material/DirectionsBoat'
-import SportsEsportsIcon from '@mui/icons-material/SportsEsports'
-
-export const Header = () => {
+export const Header = ({ title }) => {
   const { t } = useTranslation()
+
+  const titlePage = title ?  title : t('welcome_to_ometepe')
 
   return (
     <header>
@@ -30,10 +25,9 @@ export const Header = () => {
           </div>
         </section>
         <section className='header-bottom'>
-          <h2>{t('welcome_to_ometepe')}</h2>
+          <h2>{titlePage}</h2>
         </section>
       </div>
-
     </header >
   )
 }

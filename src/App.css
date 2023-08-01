@@ -29,3 +29,19 @@ a {
             transform: scale(1);
   }
 }
+
+.margin-section {
+  margin: 8px 16px;
+}
+
+@media (min-width: 720px) {
+  .margin-section {
+    margin: 16px 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .margin-section {
+    margin: 32px 64px;
+  }
+}

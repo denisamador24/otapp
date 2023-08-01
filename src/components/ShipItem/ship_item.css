@@ -1,0 +1,38 @@
+.ship-item {
+  width: 300px;
+  min-height: 200px;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px rgba(100 100 100 / 0.6);
+}
+
+.ship-item h5 {
+  padding-bottom: 8px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.ship-item__schedule {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.ship-item__schedule_route > p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.ship-item__schedule_route ul {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ship-item__schedule_route ul li {
+  padding: 4px;
+}
+
+.ship-item__schedule_route ul .focus {
+  background-color: yellow;
+}

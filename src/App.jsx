@@ -9,8 +9,9 @@ import {
   Ships, 
   RegisterPlace, 
   AdminPlaces,
-  Login
-} from './pages/index';;
+  Login,
+  Info
+} from './pages';;
 
 import './i18n';
 
@@ -30,6 +31,7 @@ function App() {
           <Route path='/editar' element={ <RegisterPlace/> } />
           <Route path='/admin' element={ <AdminPlaces/> } /> 
           <Route path='/login' element={ <Login/> } />
+          <Route path='/info' element={ <Info />} />
         </Routes>
       </Router>
     </>

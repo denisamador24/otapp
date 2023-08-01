@@ -1,0 +1,25 @@
+.ship-preview {
+  margin-top: 128px;
+}
+
+.ship-preview__title {
+  text-align: center;
+  font-size: 32px;
+}
+
+.ship-preview__see-more {
+  padding: 8px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ship-preview__list {
+
+}
+
+.ship-preview__list > ul  {
+  padding: 8px;
+  display: flex;
+  gap: 16px;
+  overflow-x: scroll;
+}
