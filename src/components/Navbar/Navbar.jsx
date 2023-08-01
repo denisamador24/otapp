@@ -17,7 +17,7 @@ const Navbar = () => {
         <Link to='/info'>Info</Link>
       </li>
       <li>
-        <Link to='https://maps.google.com'>{t('map')}</Link>
+        <Link to='https://www.google.com/maps/@11.4738551,-85.5728412,11z'>{t('map')}</Link>
       </li>
       <li>
         <Link to="/lugares">{t('places')}</Link>
