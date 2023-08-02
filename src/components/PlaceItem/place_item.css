@@ -11,13 +11,13 @@
   padding: 8px 16px;
 }
 
-.place-card h5 {
+.place-card__title {
   font-size: 28px;
   font-weight: 400;
 }
 
 .place-card p {
-  color: gray;
+  color: rgb(63, 63, 63);
   padding-bottom: 16px;
 }
 

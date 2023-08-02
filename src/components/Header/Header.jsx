@@ -16,7 +16,7 @@ export const Header = ({ title }) => {
         <section className='header-top'>
           <Link to='/'>
             <div className='header__logo'>
-              <img src={logo} alt="Logo" />
+              <img width='48' src={logo} alt="Logo" />
               <h1>OTAPP</h1>
             </div>
           </Link>

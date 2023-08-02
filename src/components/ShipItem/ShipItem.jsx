@@ -5,7 +5,7 @@ const ShipItem = ({ name, schedule, searchedHour }) => {
 
   return (
     <article className='ship-item'>
-      <h5>{name}</h5>
+      <p className='ship-item__name'>{name}</p>
       <div className='ship-item__schedule'>
         <ScheduleRoute place={places[0]} schedule={schedule} searchedHour={searchedHour} />
         <ScheduleRoute place={places[1]} schedule={schedule} searchedHour={searchedHour}/>

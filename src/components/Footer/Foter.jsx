@@ -9,17 +9,17 @@ const Foter = () => {
           <ul>
             <li>
               <a href="https://www.facebook.com/profile.php?id=100093854167295">
-                <img src="/images/facebook-icon.png" alt="Facebook Logo" />
+                <img width='32' src="/images/facebook-icon.png" alt="Facebook Logo" />
               </a>
             </li>
             <li>
               <a href="https://www.tiktok.com/@ometepetursticaap">
-                <img src="/images/tiktok-icon.png" alt="Tiktok Logo" />
+                <img width='32' src="/images/tiktok-icon.png" alt="Tiktok Logo" />
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/otapp2023/">
-                <img src="/images/instagram-icon.png" alt="Instagram Logo" />
+                <img width='32' src="/images/instagram-icon.png" alt="Instagram Logo" />
               </a>
             </li>
           </ul>

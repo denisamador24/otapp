@@ -47,6 +47,7 @@ function LanguageMenuItem({ flag, text }) {
   return (
     <div className='center'>
       <img 
+        width='32'
         src={flag}
         alt={text} 
         style={{

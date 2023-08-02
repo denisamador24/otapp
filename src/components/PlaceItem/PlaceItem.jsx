@@ -7,7 +7,7 @@ const PlaceItem = ({ image, name, description }) => {
       <figure>
         <img src={image} alt={name} />
       </figure>
-      <h5>{name}</h5>
+      <p className='place-card__title'>{name}</p>
       <p>{description.slice(0, 200) + '...'}</p>
     </article>
   )
