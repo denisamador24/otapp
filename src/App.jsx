@@ -4,12 +4,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {
   Home,
   Places,
-  PlaceInfo, 
-  Game, 
-  Ships, 
-  RegisterPlace, 
-  AdminPlaces,
-  Login,
+  PlaceInfo,
+  Game,
+  Ships,
   Info
 } from './pages';;
 
@@ -19,19 +16,15 @@ function App() {
 
   return (
     <>
-       <Router>
+      <Router>
         <Routes>
-          <Route index path="/" element={<Home/>} />
-          <Route path="/home" element={<Home/>} />
-          <Route path="/lugares" element={<Places/>} />
-          <Route path="/juego" element={<Game/>} />
-          <Route path='/lugares/info/:index' element={ <PlaceInfo/> } />
-          <Route path='/barcos' element={ <Ships/> } />
-          <Route path='/agregar' element={ <RegisterPlace/> } />
-          <Route path='/editar' element={ <RegisterPlace/> } />
-          <Route path='/admin' element={ <AdminPlaces/> } /> 
-          <Route path='/login' element={ <Login/> } />
-          <Route path='/info' element={ <Info />} />
+          <Route index path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/lugares" element={<Places />} />
+          <Route path="/juego" element={<Game />} />
+          <Route path='/lugares/info/:index' element={<PlaceInfo />} />
+          <Route path='/barcos' element={<Ships />} />
+          <Route path='/info' element={<Info />} />
         </Routes>
       </Router>
     </>

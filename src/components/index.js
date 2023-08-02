@@ -1,4 +1,3 @@
-export { default as AdminPlaceItem } from './AdminPlaceItem/AdminPlaceItem.jsx'
 export { default as AnswerFeedback } from './AnswerFeedback/AnswerFeedback.jsx'
 export { default as Answers } from './Answers/Answers.jsx'
 export { default as CardInput } from './CardInput/CardInput.jsx'
@@ -16,3 +15,6 @@ export { default as PlaceItem } from './PlaceItem/PlaceItem.jsx'
 export { default as ShipItem } from './ShipItem/ShipItem.jsx'
 export { default as SearchBar } from './SearchBar/SearchBar.jsx'
 export { default as Footer } from './Footer/Foter.jsx'
+
+// not using
+//export { default as AdminPlaceItem } from './AdminPlaceItem/AdminPlaceItem.jsx'
